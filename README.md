@@ -1,13 +1,23 @@
-# ⚡ Ganesh Prasad — Full-Stack Software Engineer Portfolio
+<div align="center">
 
-![Developer Portfolio](https://img.shields.io/badge/Focus-Full--Stack%20Software%20Engineering-38bdf8?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20React.js%20%7C%20MySQL-a855f7?style=for-the-badge)
-![Education](https://img.shields.io/badge/Education-B.E.%20CS%20(8.53%20CGPA)-10b981?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+# ⚡ GANESH PRASAD
+### **Full-Stack Software Engineer**
 
-Welcome to the official repository of **Ganesh Prasad**'s personal software engineering portfolio. This project is a state-of-the-art, high-performance single-page web application designed with modern glassmorphism aesthetics, fluid micro-animations, interactive app simulators, dark/light theme persistence, and an interactive particle background canvas.
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-ganesh--prasad--portfolio.vercel.app-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://ganesh-prasad-portfolio.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ganeshprasad40292-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1NeO0WrwLJcgMxHqpXXX0HaoLUyUCsbzg/view)
+
+![Focus](https://img.shields.io/badge/Focus-Full--Stack%20Software%20Engineering-38bdf8?style=flat-square)
+![Tech Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20React.js%20%7C%20MySQL-a855f7?style=flat-square)
+![Education](https://img.shields.io/badge/Education-B.E.%20CS%20(8.53%20CGPA)-10b981?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Available%20for%20Hire-f59e0b?style=flat-square)
+
+*Engineering high-performance full-stack web applications, secure RESTful APIs, role-based authentication, and intelligent software systems.*
 
 ---
+
+</div>
 
 ## 📌 Executive Summary
 
@@ -195,16 +205,23 @@ This repository includes a [`vercel.json`](vercel.json) file configured for 1-cl
 
 ---
 
-## 👤 Author Contact & Social Profiles
+<div align="center">
 
-- **Ganesh Prasad** — Full-Stack Software Engineer
-- **Location**: Udupi, Karnataka, India
-- **Email**: [ganeshprasadnayak292@gmail.com](mailto:ganeshprasadnayak292@gmail.com)
-- **Phone**: [+91 8088239071](tel:8088239071)
-- **GitHub**: [@Ganesh40292](https://github.com/Ganesh40292)
-- **LinkedIn**: [in/ganeshprasad40292](https://linkedin.com/in/ganeshprasad40292/)
-- **Resume**: [Google Drive Resume](https://drive.google.com/file/d/1NeO0WrwLJcgMxHqpXXX0HaoLUyUCsbzg/view)
+## 🤝 Connect & Collaborate
+
+[![Email](https://img.shields.io/badge/Email-ganeshprasadnayak292%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ganeshprasadnayak292@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow_@Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1NeO0WrwLJcgMxHqpXXX0HaoLUyUCsbzg/view)
+
+<br />
+
+*"Engineering high-performance full-stack architectures & intelligent software systems."*
+
+<br />
+
+**© 2026 Ganesh Prasad. All rights reserved.**
 
 ---
 
-*© 2026 Ganesh Prasad. All rights reserved.*
+</div>
