@@ -64,9 +64,15 @@
   - **Tools & Deployment**: Git, GitHub, Postman, IntelliJ IDEA, VS Code, Vercel, Render, Railway
   - **Core CS & Cloud**: Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, AWS/GCP Concepts, Docker Basics
 
-### 6. 💼 Work Experience & Expandable Accordions
+### 6. 💼 Work Experience & Verified MSME Credentials
 - Detailed timeline breakdown of internship at **GenZ EducateWing** (March 2026 – May 2026).
 - Expandable **Architectural & System Highlights** accordion detailing stateless JWT filter chains, 3NF database normalization, and CORS configuration.
+- **Verified Credentials & LOR**:
+  - 📜 **Internship Completion Certificate** (Validation ID: `6a49fac78b`) — Recognized by MSME, Govt. of India.
+  - 🎓 **Training Completion Certificate** (Validation ID: `8330b0167c`) — Recognized by MSME, Govt. of India.
+  - ✉️ **Official Letter of Recommendation (LOR)** — Issued May 18th, 2026 by Kranthi, Head of Operations, GenZ Educate Wing Pvt. Ltd.
+
+---
 
 ### 7. 🚀 Featured Projects & Live App Simulators
 - **Keyword Search Bar**: Instant real-time search filtering projects by title or technology tags.
