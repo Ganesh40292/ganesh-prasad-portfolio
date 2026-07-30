@@ -11,6 +11,7 @@ Welcome to the official repository of **Ganesh Prasad**'s personal software engi
 
 ## 📌 Executive Summary
 
+- **Live Website**: [https://ganesh-prasad-portfolio.vercel.app](https://ganesh-prasad-portfolio.vercel.app)
 - **Developer**: Ganesh Prasad
 - **Role**: Full-Stack Software Engineer
 - **Location**: Udupi, Karnataka, India
