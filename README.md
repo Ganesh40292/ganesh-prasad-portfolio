@@ -57,16 +57,16 @@
 
 ### 5. 🛠️ Filterable Technical Skills Matrix
 - Interactive tab controls allowing visitors to filter skill cards dynamically:
-  - **Languages**: Java, Python, JavaScript, SQL, C
-  - **Backend & Architecture**: Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture, Hibernate/JPA, Multithreading, WebSockets
+  - **Languages**: Java, Python, C, SQL
+  - **Backend & Architecture**: Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture, WebSockets
   - **Frontend & Web UI**: React.js, HTML5 & CSS3
-  - **Databases & Schema**: MySQL, MySQL Workbench
-  - **Tools & Deployment**: Git, GitHub, Postman, IntelliJ IDEA, VS Code, Vercel, Render, Railway
-  - **Core CS & Cloud**: Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, AWS/GCP Concepts, Docker Basics
+  - **Databases & Schema**: MySQL, PostgreSQL, Database Design, CRUD Operations
+  - **Tools & Deployment**: Git, GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL Workbench, Jupyter Notebook, Vercel, Render, Railway, Supabase
+  - **Core CS & Cloud**: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Cloud Computing Concepts (AWS, Azure, GCP)
 
 ### 6. 💼 Work Experience & Verified MSME Credentials
 - Detailed timeline breakdown of internship at **GenZ EducateWing** (March 2026 – May 2026).
-- Expandable **Architectural & System Highlights** accordion detailing stateless JWT filter chains, 3NF database normalization, and CORS configuration.
+- Expandable **Architectural & System Highlights** accordion detailing stateless JWT filter chains, 3NF database normalization, and CORS configuration across React, Spring Boot, PostgreSQL, and Supabase.
 - **Verified Credentials & LOR**:
   - 📜 **Internship Completion Certificate** (Validation ID: `6a49fac78b`) — Recognized by MSME, Govt. of India.
   - 🎓 **Training Completion Certificate** (Validation ID: `8330b0167c`) — Recognized by MSME, Govt. of India.
@@ -76,7 +76,7 @@
 
 ### 7. 🚀 Featured Projects & Live App Simulators
 - **Keyword Search Bar**: Instant real-time search filtering projects by title or technology tags.
-- **Tech Filter Buttons**: One-click filtering by **React**, **Spring Boot**, **MySQL**, or **Python / IoT**.
+- **Tech Filter Buttons**: One-click filtering by **React**, **Spring Boot**, **PostgreSQL**, **MySQL**, or **Python / IoT**.
 - **Interactive Project Modals**: Dynamic popups rendering complete overviews, key features, categorized tech stacks, internship impact summaries, direct GitHub links, and live interactive app simulators:
   - 🎮 **Quiz Evaluator Simulator**: Interactive multiple-choice question evaluator.
   - 📝 **Blog Preview Simulator**: Live post title renderer.
@@ -111,14 +111,14 @@
   - Full CRUD operations: Create, edit, update, and delete blog posts.
   - Commenting system for user interaction and community discussions.
   - RESTful APIs for seamless frontend-backend communication.
-  - Organized backend architecture following MVC principles with MySQL relational database mapping.
-  - Production deployment across Vercel (Frontend) and Render/Railway (Backend & Database).
+  - Organized backend architecture following MVC principles with PostgreSQL relational database mapping.
+  - Production deployment across Vercel (Frontend), Render, and Supabase (Backend & Database).
 - **Technologies Used**:
   - **Frontend**: React.js, HTML5, CSS3
   - **Backend**: Spring Boot, Spring Security, RESTful APIs
-  - **Database**: MySQL
+  - **Database**: PostgreSQL
   - **Authentication**: JWT (JSON Web Token)
-  - **Tools & Deployment**: Git, GitHub, Postman, Vercel, Render, Railway
+  - **Tools & Deployment**: Git, GitHub, Postman, Vercel, Render, Supabase
 
 ### 2. 🎮 Full Stack Interactive Quiz Application
 - **Repository**: [https://github.com/Ganesh40292/quiz-app-fullstack](https://github.com/Ganesh40292/quiz-app-fullstack)
@@ -130,13 +130,13 @@
   - Automatic score calculation and instant result display upon submission.
   - Dedicated Administrator Dashboard for creating, updating, deleting, and managing quiz questions.
   - RESTful API integration between React frontend and Spring Boot backend.
-  - Clean, organized project architecture following MVC principles and 3NF database design.
+  - Clean, organized project architecture following MVC principles and relational database design.
 - **Technologies Used**:
   - **Frontend**: React.js, HTML5, CSS3
   - **Backend**: Spring Boot, Spring Security, RESTful APIs
-  - **Database**: MySQL
+  - **Database**: PostgreSQL
   - **Authentication**: JWT (JSON Web Token)
-  - **Tools & Deployment**: Git, GitHub, Postman, Vercel, Render, Railway
+  - **Tools & Deployment**: Git, GitHub, Postman, Vercel, Render, Supabase
 
 ### 3. 🌊 Water Quality Prediction System (Aqualytica)
 - **Repository**: [https://github.com/Ganesh40292/aqualytica](https://github.com/Ganesh40292/aqualytica)

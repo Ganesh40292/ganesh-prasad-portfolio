@@ -1406,6 +1406,9 @@
         </div>
         <div class="skill-tags">
           <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Database Design</span>
+          <span class="skill-tag">CRUD Operations</span>
           <span class="skill-tag">MySQL Workbench</span>
         </div>
       </div>
@@ -1417,11 +1420,14 @@
         <div class="skill-tags">
           <span class="skill-tag">Git &amp; GitHub</span>
           <span class="skill-tag">Postman</span>
-          <span class="skill-tag">IntelliJ IDEA</span>
           <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">IntelliJ IDEA</span>
+          <span class="skill-tag">Eclipse</span>
+          <span class="skill-tag">Jupyter Notebook</span>
           <span class="skill-tag">Vercel</span>
           <span class="skill-tag">Render</span>
           <span class="skill-tag">Railway</span>
+          <span class="skill-tag">Supabase</span>
         </div>
       </div>
 
@@ -1431,11 +1437,11 @@
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Data Structures &amp; Algorithms</span>
-          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">Object-Oriented Programming</span>
           <span class="skill-tag">DBMS</span>
           <span class="skill-tag">Operating Systems</span>
           <span class="skill-tag">Computer Networks</span>
-          <span class="skill-tag">Cloud Concepts (AWS/GCP)</span>
+          <span class="skill-tag">Cloud Concepts (AWS, Azure, GCP)</span>
           <span class="skill-tag">Docker Basics</span>
         </div>
       </div>
@@ -1461,10 +1467,10 @@
             <div class="exp-date">March 2026 – May 2026</div>
           </div>
           <ul class="exp-list">
-            <li>Engineered and deployed two production-grade full-stack applications — an <strong>Interactive Quiz Platform</strong> and a <strong>Blogging Platform</strong> — using React, Spring Boot, and MySQL following MVC architecture.</li>
+            <li>Engineered and deployed two production-grade full-stack applications — an <strong>Interactive Quiz Platform</strong> and a <strong>Blogging Platform</strong> — using React, Spring Boot, and PostgreSQL, following MVC architecture.</li>
             <li>Implemented JWT-based authentication and Spring Security to enforce role-based access control and secure RESTful API endpoints.</li>
             <li>Designed normalized relational database schemas and built complete CRUD workflows, ensuring data consistency across both applications.</li>
-            <li>Deployed and maintained applications on Vercel, Render, and Railway, managing version control, source code, and documentation via Git and GitHub.</li>
+            <li>Deployed and maintained applications on Vercel, Render, and Supabase, managing version control, source code, and documentation via Git and GitHub.</li>
           </ul>
 
           <button class="accordion-toggle" onclick="toggleAccordion(this)">
@@ -1514,6 +1520,7 @@
         <button class="proj-tag-btn active" onclick="filterByTech('all', this)">All</button>
         <button class="proj-tag-btn" onclick="filterByTech('React.js', this)">React</button>
         <button class="proj-tag-btn" onclick="filterByTech('Spring Boot', this)">Spring Boot</button>
+        <button class="proj-tag-btn" onclick="filterByTech('PostgreSQL', this)">PostgreSQL</button>
         <button class="proj-tag-btn" onclick="filterByTech('MySQL', this)">MySQL</button>
         <button class="proj-tag-btn" onclick="filterByTech('Python', this)">Python / IoT</button>
       </div>
@@ -1522,13 +1529,13 @@
     <div class="projects-grid" id="projectsGrid">
 
       <!-- Project 1 -->
-      <div class="project-card" data-title="Full Stack Blogging Platform" data-tech="React.js Spring Boot MySQL Spring Security JWT REST APIs Vercel Render Railway">
+      <div class="project-card" data-title="Full Stack Blogging Platform" data-tech="React.js Spring Boot PostgreSQL Spring Security JWT REST APIs Vercel Render Supabase">
         <div>
           <span class="project-badge">FULL STACK APPLICATION</span>
           <h3 class="project-title">Full Stack Blogging Platform</h3>
           <ul class="project-desc-list">
             <li>Engineered a secure full-stack blogging platform supporting post creation, editing, deletion, and interactive user commenting.</li>
-            <li>Implemented Spring Security with JWT Authentication and RESTful APIs mapped to a MySQL relational database schema.</li>
+            <li>Implemented Spring Security with JWT Authentication and RESTful APIs mapped to a PostgreSQL relational database schema.</li>
           </ul>
         </div>
         <div>
@@ -1537,7 +1544,8 @@
             <span class="tech-pill">Spring Boot</span>
             <span class="tech-pill">Spring Security</span>
             <span class="tech-pill">JWT</span>
-            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Supabase</span>
           </div>
           <button class="view-details-btn" onclick="openProjectModal(0)">
             View Architecture &amp; Live Demo ↗
@@ -1546,13 +1554,13 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="project-card" data-title="Full Stack Interactive Quiz Application" data-tech="React.js Spring Boot MySQL Spring Security JWT REST APIs Admin Dashboard Vercel Render Railway">
+      <div class="project-card" data-title="Full Stack Interactive Quiz Application" data-tech="React.js Spring Boot PostgreSQL Spring Security JWT REST APIs Admin Dashboard Vercel Render Supabase">
         <div>
           <span class="project-badge">FULL STACK APPLICATION</span>
           <h3 class="project-title">Full Stack Interactive Quiz Application</h3>
           <ul class="project-desc-list">
             <li>Built an interactive online quiz platform with real-time score evaluation and a dedicated Administrator Dashboard for full CRUD question management.</li>
-            <li>Configured secure JWT session authentication, Spring Security endpoints, and cloud deployments on Vercel and Render.</li>
+            <li>Configured secure JWT session authentication, Spring Security endpoints, and cloud deployments on Vercel, Render, and Supabase.</li>
           </ul>
         </div>
         <div>
@@ -1561,7 +1569,8 @@
             <span class="tech-pill">Spring Boot</span>
             <span class="tech-pill">Spring Security</span>
             <span class="tech-pill">JWT</span>
-            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Supabase</span>
           </div>
           <button class="view-details-btn" onclick="openProjectModal(1)">
             View Architecture &amp; Live Demo ↗
@@ -1714,8 +1723,9 @@
       <div style="display:flex;align-items:center;gap:14px;">
         <img src="profile.jpg" alt="Ganesh Prasad" style="width:54px;height:54px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--cyan);" />
         <div>
-          <h2 style="font-family:var(--font-heading);font-size:1.45rem;color:var(--text-primary);">Ganesh Prasad</h2>
-          <p style="font-size:0.85rem;color:var(--text-muted);">Full-Stack Software Engineer | CGPA 8.53</p>
+          <h2 style="font-family:var(--font-heading);font-size:1.45rem;color:var(--text-primary);">GANESH PRASAD</h2>
+          <p style="font-size:0.82rem;color:var(--text-muted);font-family:var(--font-mono);">📍 1-28 Golkar House, Marne, via Moodubelle, Udupi, 576120</p>
+          <p style="font-size:0.82rem;color:var(--cyan);font-family:var(--font-mono);margin-top:2px;">📞 8088239071 | ganeshprasadnayak292@gmail.com</p>
         </div>
       </div>
       <div style="display:flex;gap:8px;">
@@ -1729,31 +1739,70 @@
     </div>
 
     <div style="color:var(--text-secondary);font-size:0.92rem;line-height:1.7;">
-      <h3 style="color:var(--cyan);font-size:1.1rem;margin-bottom:6px;">Summary</h3>
+      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Professional Summary</h3>
       <p style="margin-bottom:18px;">
-        Final-year Computer Science student (CGPA: 8.53) with hands-on full-stack development experience in Java, Spring Boot, React, and MySQL. Shipped two production-ready web applications during internship, specializing in REST API architecture, JWT authentication, and cloud deployments.
+        Final-year Computer Science student (CGPA: 8.53) with hands-on full-stack development experience in Java, Spring Boot, React, and MySQL. Delivered two production-ready applications during a full-stack developer internship, covering REST API design, JWT authentication, and cloud deployment. Strong foundation in Data Structures, Object-Oriented Programming, and Database Management, with a track record of independently designing and shipping end-to-end web applications.
       </p>
 
-      <h3 style="color:var(--cyan);font-size:1.1rem;margin-bottom:6px;">Technical Skills</h3>
+      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Technical Skills</h3>
       <p style="margin-bottom:18px;">
-        <strong>Languages:</strong> Java, Python, JavaScript, C, SQL<br>
-        <strong>Backend:</strong> Spring Boot, Spring Security, REST APIs, JWT, MVC, Multithreading, Hibernate/JPA, WebSockets<br>
+        <strong>Languages:</strong> Java, Python, C, SQL<br>
+        <strong>Backend:</strong> Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture, WebSockets<br>
         <strong>Frontend:</strong> React.js, HTML5, CSS3<br>
-        <strong>Database &amp; Tools:</strong> MySQL, MySQL Workbench, Git, GitHub, Postman, IntelliJ, VS Code, Vercel, Render, Railway
+        <strong>Database:</strong> MySQL, Database Design, CRUD Operations<br>
+        <strong>Tools &amp; Platforms:</strong> Git, GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL Workbench, Jupyter Notebook<br>
+        <strong>Deployment:</strong> Vercel, Render, Railway, Supabase<br>
+        <strong>Core CS Concepts:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Cloud Computing Concepts (AWS, Azure, GCP)
       </p>
 
-      <h3 style="color:var(--cyan);font-size:1.1rem;margin-bottom:6px;">Experience</h3>
-      <p style="margin-bottom:18px;">
-        <strong>Full Stack Developer Intern — GenZ EducateWing</strong> (March 2026 – May 2026)<br>
-        Built and deployed Interactive Quiz &amp; Blogging platforms. Configured Spring Security, JWT authentication, relational schemas, and Vercel/Render hosting.
-      </p>
+      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Internship Experience</h3>
+      <div style="margin-bottom:18px;">
+        <div style="display:flex;justify-content:space-between;font-weight:700;color:var(--text-primary);">
+          <span>Full Stack Developer Intern — GenZ EducateWing</span>
+          <span>March 2026 – May 2026</span>
+        </div>
+        <ul style="list-style:disc;padding-left:20px;margin-top:6px;color:var(--text-secondary);">
+          <li>Engineered and deployed two production-grade full-stack applications — an Interactive Quiz Platform and a Blogging Platform — using React, Spring Boot, and PostgreSQL, following MVC architecture.</li>
+          <li>Implemented JWT-based authentication and Spring Security to enforce role-based access control and secure RESTful API endpoints.</li>
+          <li>Designed normalized relational database schemas and built complete CRUD workflows, ensuring data consistency across both applications.</li>
+          <li>Deployed and maintained applications on Vercel, Render, and Supabase, managing version control, source code, and documentation via Git and GitHub.</li>
+        </ul>
+      </div>
 
-      <h3 style="color:var(--cyan);font-size:1.1rem;margin-bottom:6px;">Education</h3>
-      <p>
-        • <strong>B.E. Computer Science &amp; Engineering</strong> — SMVITM (CGPA: 8.53)<br>
-        • <strong>12th Standard</strong> — MGM College (92.83%)<br>
-        • <strong>10th Standard</strong> — Shanthinikethan School (90.72%)
-      </p>
+      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Projects</h3>
+      <div style="margin-bottom:18px;">
+        <div style="margin-bottom:10px;">
+          <div style="font-weight:700;color:var(--text-primary);">Full Stack Blogging Platform | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">React, Spring Boot, PostgreSQL, Spring Security, JWT, REST APIs</span></div>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
+            <li>Developed a role-based blogging platform enabling users to publish, edit, and comment on posts through secure REST APIs.</li>
+            <li>Configured Spring Security and JWT for authenticated content management and granular access control.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom:10px;">
+          <div style="font-weight:700;color:var(--text-primary);">Full Stack Interactive Quiz Application | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">React, Spring Boot, PostgreSQL, Spring Security, JWT</span></div>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
+            <li>Built a quiz application with real-time score evaluation and an admin dashboard for quiz creation and management.</li>
+            <li>Designed relational schemas and REST APIs supporting dynamic question sets and secure, authenticated user sessions.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-weight:700;color:var(--text-primary);">Water Quality Prediction System (Final Year Major Project) | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">Python, Machine Learning, Flask/Spring Boot, MySQL, ESP32, IoT Sensors</span></div>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
+            <li>Engineering an IoT-enabled machine learning system integrating ESP32 sensors to predict water quality from multiple real-time parameters.</li>
+            <li>Building a live monitoring dashboard to visualize sensor data and model predictions for continuous water quality assessment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Education</h3>
+      <div>
+        <p style="margin-bottom:4px;"><strong>Sri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal, Udupi</strong><br>
+        Bachelor of Engineering, Computer Science and Engineering — CGPA: 8.53</p>
+        <p style="margin-bottom:4px;"><strong>Mahatma Gandhi Memorial College, Udupi</strong> — 12th Standard (92.83%)</p>
+        <p><strong>Shanthinikethan English Medium School, Alevoor, Udupi</strong> — 10th Standard (90.72%)</p>
+      </div>
     </div>
   </div>
 </div>
@@ -2043,15 +2092,15 @@
         "Full CRUD operations: Create, edit, update, and delete blog posts.",
         "Commenting system for user interaction and community discussions.",
         "RESTful APIs for seamless frontend-backend communication.",
-        "Organized backend architecture following MVC principles with MySQL relational database mapping.",
-        "Cloud deployment workflow across Vercel, Render, and Railway using Git/GitHub."
+        "Organized backend architecture following MVC principles with PostgreSQL relational database mapping.",
+        "Cloud deployment workflow across Vercel, Render, and Supabase using Git/GitHub."
       ],
       techCategories: {
         "Frontend": ["React.js", "HTML5", "CSS3"],
         "Backend": ["Spring Boot", "Spring Security", "RESTful APIs"],
-        "Database": ["MySQL"],
+        "Database": ["PostgreSQL"],
         "Authentication": ["JWT (JSON Web Token)"],
-        "Tools & Deployment": ["Git", "GitHub", "Postman", "Vercel", "Render", "Railway"]
+        "Tools & Deployment": ["Git", "GitHub", "Postman", "Vercel", "Render", "Supabase"]
       },
       significance: "Demonstrates practical full-stack web development experience gained during my internship at GenZ EducateWing, proving end-to-end capabilities in building scalable, secure, and production-ready applications.",
       demoType: "blog",
@@ -2067,16 +2116,16 @@
         "Automatic score calculation and instant result display upon submission.",
         "Dedicated Administrator Dashboard for creating, updating, deleting, and managing quiz questions.",
         "RESTful API integration between React frontend and Spring Boot backend.",
-        "Clean, organized project architecture following MVC principles and 3NF database design."
+        "Clean, organized project architecture following MVC principles and relational database design."
       ],
       techCategories: {
         "Frontend": ["React.js", "HTML5", "CSS3"],
         "Backend": ["Spring Boot", "Spring Security", "RESTful APIs"],
-        "Database": ["MySQL"],
+        "Database": ["PostgreSQL"],
         "Authentication": ["JWT (JSON Web Token)"],
-        "Tools & Deployment": ["Git", "GitHub", "Postman", "Vercel", "Render", "Railway"]
+        "Tools & Deployment": ["Git", "GitHub", "Postman", "Vercel", "Render", "Supabase"]
       },
-      significance: "Reflects hands-on experience gained during my internship at GenZ EducateWing, demonstrating proficiency in React.js, Spring Boot, Spring Security, JWT, REST APIs, MySQL, and cloud deployment.",
+      significance: "Reflects hands-on experience gained during my internship at GenZ EducateWing, demonstrating proficiency in React.js, Spring Boot, Spring Security, JWT, REST APIs, PostgreSQL, and cloud deployment.",
       demoType: "quiz",
       repo: "https://github.com/Ganesh40292/quiz-app-fullstack"
     },
