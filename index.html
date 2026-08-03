@@ -1749,18 +1749,22 @@
         </div>
       </div>
 
-      <form class="contact-form" onsubmit="handleFormSubmit(event)">
+      <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+        <input type="hidden" name="access_key" value="c37558fe-a1ba-4592-a10a-e1accdb1b2ec">
+        <input type="hidden" name="subject" value="New Portfolio Contact from ganesh-prasad-portfolio.vercel.app">
+        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+        <input type="checkbox" name="botcheck" style="display:none;">
         <div class="form-group">
           <label class="form-label" for="senderName">Your Name</label>
-          <input type="text" id="senderName" class="form-input" placeholder="e.g. John Doe" required />
+          <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. John Doe" required />
         </div>
         <div class="form-group">
           <label class="form-label" for="senderEmail">Your Email</label>
-          <input type="email" id="senderEmail" class="form-input" placeholder="e.g. john@example.com" required />
+          <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required />
         </div>
         <div class="form-group">
           <label class="form-label" for="senderMsg">Message</label>
-          <textarea id="senderMsg" class="form-input" placeholder="Hi Ganesh, I would like to discuss..." required></textarea>
+          <textarea id="senderMsg" name="message" class="form-input" placeholder="Hi Ganesh, I would like to discuss..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="justify-content:center;margin-top:8px;" id="submitBtn">
           Send Message ➔
@@ -2082,18 +2086,45 @@
     });
   }
 
-  // Form Submission
-  function handleFormSubmit(e) {
+  // Form Submission via Web3Forms API
+  async function handleFormSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
+    const form = document.getElementById('contactForm');
+    const originalText = btn.textContent;
     btn.textContent = 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-      alert('Thank you for reaching out! Your message has been sent successfully.');
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-      document.querySelector('.contact-form').reset();
-    }, 1200);
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        btn.textContent = '✓ Sent!';
+        btn.style.background = 'var(--emerald)';
+        form.reset();
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch (error) {
+      btn.textContent = '✕ Failed';
+      btn.style.background = 'var(--amber)';
+      console.error('Form error:', error);
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    }
   }
 
   // Resume Modal Logic
