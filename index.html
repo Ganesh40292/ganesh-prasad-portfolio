@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ganesh Prasad — Full-Stack Software Engineer. Specializing in Java, Spring Boot, React.js, MySQL, and IoT ML Systems.">
+<meta name="description" content="Ganesh Prasad — Full-Stack Software Engineer. Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
 <meta name="theme-color" content="#06080e">
 <title>Ganesh Prasad — Full-Stack Software Engineer</title>
 
@@ -1342,7 +1342,7 @@
           Engineering Scalable <span class="gradient-text">Full-Stack</span> Web Apps &amp; Systems.
         </h1>
         <p class="hero-subtitle">
-          Specializing in <strong>Java, Spring Boot, React.js, and MySQL</strong>. Experienced in building secure RESTful APIs, role-based JWT authentication, cloud deployment, and IoT ML integration.
+          Specializing in <strong>Java, Spring Boot, React.js, PostgreSQL, and MySQL</strong>. Experienced in building secure RESTful APIs, role-based JWT authentication, cloud deployment, and IoT ML integration.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">
@@ -1380,7 +1380,7 @@
           <div style="display:flex;flex-wrap:wrap;gap:8px;">
             <span class="skill-tag" style="color:var(--cyan);border-color:rgba(56,189,248,0.3);">Java &amp; Spring Boot</span>
             <span class="skill-tag" style="color:var(--violet);border-color:rgba(168,85,247,0.3);">React.js</span>
-            <span class="skill-tag" style="color:var(--emerald);border-color:rgba(16,185,129,0.3);">MySQL 3NF</span>
+            <span class="skill-tag" style="color:var(--emerald);border-color:rgba(16,185,129,0.3);">PostgreSQL &amp; MySQL</span>
             <span class="skill-tag" style="color:var(--amber);border-color:rgba(245,158,11,0.3);">Python &amp; IoT</span>
           </div>
         </div>
@@ -2113,23 +2113,23 @@
         }, 3000);
       } else {
         console.error('Web3Forms error:', data);
-        btn.textContent = '✕ Failed';
+        btn.textContent = '✕ ' + (data.message || 'Failed');
         btn.style.background = 'var(--amber)';
         setTimeout(() => {
           btn.textContent = originalText;
           btn.style.background = '';
           btn.disabled = false;
-        }, 3000);
+        }, 4000);
       }
     } catch (error) {
-      btn.textContent = '✕ Failed';
+      btn.textContent = '✕ Network Error';
       btn.style.background = 'var(--amber)';
       console.error('Form error:', error);
       setTimeout(() => {
         btn.textContent = originalText;
         btn.style.background = '';
         btn.disabled = false;
-      }, 3000);
+      }, 4000);
     }
   }
 
