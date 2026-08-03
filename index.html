@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Ganesh Prasad — Full-Stack Software Engineer. Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
 <meta name="theme-color" content="#06080e">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Ganesh Prasad — Full-Stack Software Engineer</title>
 
 <!-- Fonts -->
@@ -2105,6 +2108,7 @@
       if (data.success) {
         btn.textContent = '✓ Sent!';
         btn.style.background = 'var(--emerald)';
+        alert('Success! Your message has been sent successfully to Ganesh\'s Gmail inbox via Web3Forms.');
         form.reset();
         setTimeout(() => {
           btn.textContent = originalText;
@@ -2113,6 +2117,7 @@
         }, 3000);
       } else {
         console.error('Web3Forms error:', data);
+        alert('Web3Forms Notice: ' + (data.message || 'Could not deliver email. Please check your Web3Forms access key status.'));
         btn.textContent = '✕ ' + (data.message || 'Failed');
         btn.style.background = 'var(--amber)';
         setTimeout(() => {
@@ -2122,6 +2127,7 @@
         }, 4000);
       }
     } catch (error) {
+      alert('Network Error: Failed to reach Web3Forms servers. Please check your internet connection.');
       btn.textContent = '✕ Network Error';
       btn.style.background = 'var(--amber)';
       console.error('Form error:', error);
