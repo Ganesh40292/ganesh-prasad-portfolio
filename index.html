@@ -1750,10 +1750,6 @@
       </div>
 
       <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
-        <input type="hidden" name="access_key" value="c37558fe-a1ba-4592-a10a-e1accdb1b2ec">
-        <input type="hidden" name="subject" value="New Portfolio Contact from ganesh-prasad-portfolio.vercel.app">
-        <input type="hidden" name="from_name" value="Portfolio Contact Form">
-        <input type="checkbox" name="botcheck" style="display:none;">
         <div class="form-group">
           <label class="form-label" for="senderName">Your Name</label>
           <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. John Doe" required />
@@ -2097,13 +2093,16 @@
 
     try {
       const formData = new FormData(form);
+      formData.append('access_key', 'c37558fe-a1ba-4592-a10a-e1accdb1b2ec');
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData
       });
-      const result = await response.json();
 
-      if (result.success) {
+      const data = await response.json();
+
+      if (data.success) {
         btn.textContent = '✓ Sent!';
         btn.style.background = 'var(--emerald)';
         form.reset();
@@ -2113,7 +2112,14 @@
           btn.disabled = false;
         }, 3000);
       } else {
-        throw new Error(result.message || 'Submission failed');
+        console.error('Web3Forms error:', data);
+        btn.textContent = '✕ Failed';
+        btn.style.background = 'var(--amber)';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
       }
     } catch (error) {
       btn.textContent = '✕ Failed';
