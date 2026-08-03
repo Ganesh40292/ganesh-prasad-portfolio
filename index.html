@@ -1129,6 +1129,68 @@
   }
   .modal-close:hover { background: rgba(255, 255, 255, 0.2); }
 
+  /* Resume Full Justification & Printable Styles */
+  .resume-body-content {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .resume-body-content p,
+  .resume-body-content li {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .resume-section-heading {
+    color: var(--cyan);
+    font-size: 1.05rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+  }
+
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #resumeModal, #resumeModal * {
+      visibility: visible;
+    }
+    #resumeModal {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      background: #ffffff !important;
+      color: #0f172a !important;
+      padding: 0 !important;
+    }
+    #resumeModal .modal-card {
+      box-shadow: none !important;
+      border: none !important;
+      max-width: 100% !important;
+      background: #ffffff !important;
+      color: #0f172a !important;
+      padding: 20px !important;
+    }
+    #resumeModal .modal-close, #resumeModal .btn, #scrollProgressBar, header, footer, .floating-dock {
+      display: none !important;
+    }
+    #resumeModal .resume-body-content,
+    #resumeModal .resume-body-content p,
+    #resumeModal .resume-body-content li {
+      text-align: justify !important;
+      text-justify: inter-word !important;
+      color: #1e293b !important;
+    }
+    #resumeModal h2, #resumeModal h3, #resumeModal .resume-section-heading {
+      color: #0f172a !important;
+    }
+  }
+
   /* Floating Dock */
   .floating-dock {
     position: fixed;
@@ -1738,14 +1800,14 @@
       </div>
     </div>
 
-    <div style="color:var(--text-secondary);font-size:0.92rem;line-height:1.7;">
-      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Professional Summary</h3>
-      <p style="margin-bottom:18px;">
+    <div class="resume-body-content" style="color:var(--text-secondary);font-size:0.92rem;line-height:1.75;text-align:justify;text-justify:inter-word;">
+      <h3 class="resume-section-heading">Professional Summary</h3>
+      <p style="margin-bottom:18px;text-align:justify;text-justify:inter-word;">
         Final-year Computer Science student (CGPA: 8.53) with hands-on full-stack development experience in Java, Spring Boot, React, and MySQL. Delivered two production-ready applications during a full-stack developer internship, covering REST API design, JWT authentication, and cloud deployment. Strong foundation in Data Structures, Object-Oriented Programming, and Database Management, with a track record of independently designing and shipping end-to-end web applications.
       </p>
 
-      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Technical Skills</h3>
-      <p style="margin-bottom:18px;">
+      <h3 class="resume-section-heading">Technical Skills</h3>
+      <p style="margin-bottom:18px;text-align:justify;text-justify:inter-word;">
         <strong>Languages:</strong> Java, Python, C, SQL<br>
         <strong>Backend:</strong> Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture, WebSockets<br>
         <strong>Frontend:</strong> React.js, HTML5, CSS3<br>
@@ -1755,50 +1817,50 @@
         <strong>Core CS Concepts:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Cloud Computing Concepts (AWS, Azure, GCP)
       </p>
 
-      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Internship Experience</h3>
+      <h3 class="resume-section-heading">Internship Experience</h3>
       <div style="margin-bottom:18px;">
         <div style="display:flex;justify-content:space-between;font-weight:700;color:var(--text-primary);">
           <span>Full Stack Developer Intern — GenZ EducateWing</span>
           <span>March 2026 – May 2026</span>
         </div>
-        <ul style="list-style:disc;padding-left:20px;margin-top:6px;color:var(--text-secondary);">
-          <li>Engineered and deployed two production-grade full-stack applications — an Interactive Quiz Platform and a Blogging Platform — using React, Spring Boot, and PostgreSQL, following MVC architecture.</li>
-          <li>Implemented JWT-based authentication and Spring Security to enforce role-based access control and secure RESTful API endpoints.</li>
-          <li>Designed normalized relational database schemas and built complete CRUD workflows, ensuring data consistency across both applications.</li>
+        <ul style="list-style:disc;padding-left:20px;margin-top:6px;color:var(--text-secondary);text-align:justify;text-justify:inter-word;">
+          <li style="margin-bottom:4px;">Engineered and deployed two production-grade full-stack applications — an Interactive Quiz Platform and a Blogging Platform — using React, Spring Boot, and PostgreSQL, following MVC architecture.</li>
+          <li style="margin-bottom:4px;">Implemented JWT-based authentication and Spring Security to enforce role-based access control and secure RESTful API endpoints.</li>
+          <li style="margin-bottom:4px;">Designed normalized relational database schemas and built complete CRUD workflows, ensuring data consistency across both applications.</li>
           <li>Deployed and maintained applications on Vercel, Render, and Supabase, managing version control, source code, and documentation via Git and GitHub.</li>
         </ul>
       </div>
 
-      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Projects</h3>
+      <h3 class="resume-section-heading">Projects</h3>
       <div style="margin-bottom:18px;">
-        <div style="margin-bottom:10px;">
+        <div style="margin-bottom:12px;">
           <div style="font-weight:700;color:var(--text-primary);">Full Stack Blogging Platform | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">React, Spring Boot, PostgreSQL, Spring Security, JWT, REST APIs</span></div>
-          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
-            <li>Developed a role-based blogging platform enabling users to publish, edit, and comment on posts through secure REST APIs.</li>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;text-align:justify;text-justify:inter-word;">
+            <li style="margin-bottom:3px;">Developed a role-based blogging platform enabling users to publish, edit, and comment on posts through secure REST APIs.</li>
             <li>Configured Spring Security and JWT for authenticated content management and granular access control.</li>
           </ul>
         </div>
 
-        <div style="margin-bottom:10px;">
+        <div style="margin-bottom:12px;">
           <div style="font-weight:700;color:var(--text-primary);">Full Stack Interactive Quiz Application | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">React, Spring Boot, PostgreSQL, Spring Security, JWT</span></div>
-          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
-            <li>Built a quiz application with real-time score evaluation and an admin dashboard for quiz creation and management.</li>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;text-align:justify;text-justify:inter-word;">
+            <li style="margin-bottom:3px;">Built a quiz application with real-time score evaluation and an admin dashboard for quiz creation and management.</li>
             <li>Designed relational schemas and REST APIs supporting dynamic question sets and secure, authenticated user sessions.</li>
           </ul>
         </div>
 
         <div>
           <div style="font-weight:700;color:var(--text-primary);">Water Quality Prediction System (Final Year Major Project) | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">Python, Machine Learning, Flask/Spring Boot, MySQL, ESP32, IoT Sensors</span></div>
-          <ul style="list-style:disc;padding-left:20px;margin-top:4px;">
-            <li>Engineering an IoT-enabled machine learning system integrating ESP32 sensors to predict water quality from multiple real-time parameters.</li>
+          <ul style="list-style:disc;padding-left:20px;margin-top:4px;text-align:justify;text-justify:inter-word;">
+            <li style="margin-bottom:3px;">Engineering an IoT-enabled machine learning system integrating ESP32 sensors to predict water quality from multiple real-time parameters.</li>
             <li>Building a live monitoring dashboard to visualize sensor data and model predictions for continuous water quality assessment.</li>
           </ul>
         </div>
       </div>
 
-      <h3 style="color:var(--cyan);font-size:1.05rem;margin-bottom:6px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.05em;">Education</h3>
-      <div>
-        <p style="margin-bottom:4px;"><strong>Sri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal, Udupi</strong><br>
+      <h3 class="resume-section-heading">Education</h3>
+      <div style="text-align:justify;text-justify:inter-word;">
+        <p style="margin-bottom:6px;"><strong>Sri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal, Udupi</strong><br>
         Bachelor of Engineering, Computer Science and Engineering — CGPA: 8.53</p>
         <p style="margin-bottom:4px;"><strong>Mahatma Gandhi Memorial College, Udupi</strong> — 12th Standard (92.83%)</p>
         <p><strong>Shanthinikethan English Medium School, Alevoor, Udupi</strong> — 10th Standard (90.72%)</p>
