@@ -58,11 +58,11 @@
 ### 5. 🛠️ Filterable Technical Skills Matrix
 - Interactive tab controls allowing visitors to filter skill cards dynamically:
   - **Languages**: Java, Python, C, SQL
-  - **Backend & Architecture**: Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture, WebSockets
+  - **Backend & Architecture**: Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture
   - **Frontend & Web UI**: React.js, HTML5 & CSS3
   - **Databases & Schema**: MySQL, PostgreSQL, Database Design, CRUD Operations
   - **Tools & Deployment**: Git, GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL Workbench, Jupyter Notebook, Vercel, Render, Railway, Supabase
-  - **Core CS & Cloud**: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Cloud Computing Concepts (AWS, Azure, GCP)
+  - **Core CS & Cloud**: Data Structures & Algorithms Basics, Object-Oriented Programming Basics, DBMS Basics, Operating Systems Basics, Computer Networks Basics, Cloud Computing Concepts Basics (AWS, Azure, GCP), Docker Basics
 
 ### 6. 💼 Work Experience & Verified MSME Credentials
 - Detailed timeline breakdown of internship at **GenZ EducateWing** (March 2026 – May 2026).
