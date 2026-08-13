@@ -1,19 +1,18 @@
 <div align="center">
 
 # ⚡ GANESH PRASAD
-### **Full-Stack Software Engineer**
+### **Aspiring Full-Stack Developer**
 
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-ganesh--prasad--portfolio.vercel.app-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://ganesh-prasad-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ganeshprasad40292-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
 [![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link)
 
-![Focus](https://img.shields.io/badge/Focus-Full--Stack%20Software%20Engineering-38bdf8?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Full--Stack%20Development-38bdf8?style=flat-square)
 ![Tech Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20React.js%20%7C%20MySQL-a855f7?style=flat-square)
 ![Education](https://img.shields.io/badge/Education-B.E.%20CS%20(8.53%20CGPA)-10b981?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Available%20for%20Hire-f59e0b?style=flat-square)
 
-*Engineering high-performance full-stack web applications, secure RESTful APIs, role-based authentication, and intelligent software systems.*
+*Passionate about building scalable full-stack applications, secure APIs, and intuitive user experiences.*
 
 ---
 
@@ -23,11 +22,11 @@
 
 - **Live Website**: [https://ganesh-prasad-portfolio.vercel.app](https://ganesh-prasad-portfolio.vercel.app)
 - **Developer**: Ganesh Prasad
-- **Role**: Full-Stack Software Engineer
+- **Role**: Aspiring Full-Stack Developer
 - **Location**: Udupi, Karnataka, India
 - **Education**: B.E. in Computer Science & Engineering (CGPA: **8.53**) @ Sri Madhwa Vadiraja Institute of Technology and Management (SMVITM)
 - **Internship**: Full Stack Developer Intern @ **GenZ EducateWing** (March 2026 – May 2026)
-- **Email**: [ganeshprasadnayak292@gmail.com](mailto:ganeshprasadnayak292@gmail.com)
+- **Email**: [ganeshprasad40292.dev@gmail.com](mailto:ganeshprasad40292.dev@gmail.com)
 - **Phone**: [+91 8088239071](tel:8088239071)
 - **GitHub**: [github.com/Ganesh40292](https://github.com/Ganesh40292)
 - **LinkedIn**: [linkedin.com/in/ganeshprasad40292](https://linkedin.com/in/ganeshprasad40292/)
@@ -35,38 +34,38 @@
 
 ---
 
-## ✨ Key Portfolio Features & Highlights
+## ✨ Key Portfolio Features & Upgrades
 
-### 1. 🎬 Cinematic Cyber-Emblem Welcome Intro Screen
+### 1. 🎬 Cinematic Cyber-Emblem Welcome Intro Screen & Quote
+- Top-center glassmorphism welcome quote badge: *"Welcome to my portfolio — Transforming ideas into elegant, high-impact digital experiences."*
 - Features a central glowing monogram logo (**`GP`**) wrapped in counter-rotating cyan & purple cyber glow rings (`@keyframes spinRing`).
-- Title expands with horizontal tracking tracking expansion (`@keyframes trackingExpand`).
-- Includes an animated loading progress bar and a smooth upwards shutter exit transition (`transform: translateY(-100%)`).
+- Animated loading progress bar and smooth upwards shutter exit transition (`transform: translateY(-100%)`).
 
 ### 2. ☀️ Light Mode & 🌙 Dark Mode Theme Engine
-- **Dark Mode (Default)**: Deep dark background (`#06080e`), cyan and violet glassmorphism cards, ambient blur backdrops, and cyan particle mesh.
-- **Light Mode**: Crisp white/slate background (`#f8fafc`), floating sky-blue dot matrix grid (`@keyframes moveLightGrid`), animated multi-colored gradient waves (`@keyframes lightGradientWave`), floating ambient light spheres, and high-contrast ocean blue particle nodes.
+- **Dark Mode (Default)**: Deep dark background (`#06080e`), cyan/violet glassmorphism cards, ambient blur backdrops, and cyan particle mesh.
+- **Light Mode**: Crisp white/slate background (`#f8fafc`), floating sky-blue dot matrix grid (`@keyframes moveLightGrid`), animated gradient waves (`@keyframes lightGradientWave`), and high-contrast ocean blue particle nodes.
 - Persistent state saved in browser `localStorage`.
 
 ### 3. 🌌 Interactive Particle Mesh Canvas Engine
 - Built using native HTML5 Canvas and `requestAnimationFrame`.
-- Renders an interactive physics particle network that continuously connects surrounding nodes with distance lines.
+- Renders an interactive physics particle network connecting surrounding nodes with dynamic distance lines.
 
 ### 4. 🔲 Hero Bento Grid Architecture
-- **Left Panel**: Full-stack engineer pill badge, metallic gradient headline pitch (*"Engineering Scalable Full-Stack Web Apps & Systems"*), summary bio, and 3 CTA buttons (**Explore Projects**, **View / Download CV**, **Get in Touch**).
-- **Right Panel**: Profile photo card in a cyan gradient ring frame (`profile.jpg`), GitHub tech stack overview card, and stat counter grid (**8.53 CGPA**, **2+ Full-Stack Apps**, **100% Full-Stack Focus**).
+- **Left Panel**: Aspiring Full-Stack Developer pill badge, headline pitch (*"Building Scalable Full-Stack Web Applications & Modern APIs."*), summary bio, and CTA buttons (**Explore Projects**, **View / Download CV**, **Get in Touch**, and **Hire Me**).
+- **Right Panel**: High-definition sharp profile photo in a cyan gradient ring frame (`profile.jpg`), GitHub tech stack overview card, and balanced 2-column stat grid (**8.53 BE CGPA** & **2+ Deployed Apps**).
 
 ### 5. 🛠️ Filterable Technical Skills Matrix
 - Interactive tab controls allowing visitors to filter skill cards dynamically:
-  - **Languages**: Java, Python, C, SQL
+  - **Languages**: Java, Python, SQL
   - **Backend & Architecture**: Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture
   - **Frontend & Web UI**: React.js, HTML5 & CSS3
   - **Databases & Schema**: MySQL, PostgreSQL, Database Design, CRUD Operations
-  - **Tools & Deployment**: Git, GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL Workbench, Jupyter Notebook, Vercel, Render, Railway, Supabase
-  - **Core CS & Cloud**: Data Structures & Algorithms Basics, Object-Oriented Programming Basics, DBMS Basics, Operating Systems Basics, Computer Networks Basics, Cloud Computing Concepts Basics (AWS, Azure, GCP), Docker Basics
+  - **Developer Tools**: Git & GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL Workbench, Jupyter Notebook
+  - **Cloud & Deployment**: Vercel, Render, Railway, Supabase
 
 ### 6. 💼 Work Experience & Verified MSME Credentials
 - Detailed timeline breakdown of internship at **GenZ EducateWing** (March 2026 – May 2026).
-- Expandable **Architectural & System Highlights** accordion detailing stateless JWT filter chains, 3NF database normalization, and CORS configuration across React, Spring Boot, PostgreSQL, and Supabase.
+- Expandable **Key Internship Outcomes** accordion detailing full-stack application development using React, Spring Boot, PostgreSQL/MySQL, secure JWT authentication, and cloud deployment workflows across Vercel, Render, and Supabase.
 - **Verified Credentials & LOR**:
   - 📜 **Internship Completion Certificate** (Validation ID: `6a49fac78b`) — Recognized by MSME, Govt. of India.
   - 🎓 **Training Completion Certificate** (Validation ID: `8330b0167c`) — Recognized by MSME, Govt. of India.
@@ -74,35 +73,42 @@
 
 ---
 
-### 7. 🚀 Featured Projects & Live App Simulators
+### 7. 🎓 Workshops & Technical Training
+- **UniCourt Analytics Workshop 2026** (August 2026 — UniCourt | SMVITM, Bantakal).
+- Interactive expandable accordion card revealing hands-on experience with **Git, GitHub, Docker, Docker Compose, Flask, PostgreSQL, and Python**.
+- Containerized Flask web application setup, database volume mapping, and DevOps workflows.
+- Fully integrated into both main page navigation and printable CV modal.
+
+---
+
+### 8. 🚀 Featured Projects & Live App Deployed Links
 - **Keyword Search Bar**: Instant real-time search filtering projects by title or technology tags.
 - **Tech Filter Buttons**: One-click filtering by **React**, **Spring Boot**, **PostgreSQL**, **MySQL**, or **Python / IoT**.
-- **Interactive Project Modals**: Dynamic popups rendering complete overviews, key features, categorized tech stacks, internship impact summaries, direct GitHub links, and live interactive app simulators:
-  - 🎮 **Quiz Evaluator Simulator**: Interactive multiple-choice question evaluator.
-  - 📝 **Blog Preview Simulator**: Live post title renderer.
+- **Live Deployed App Buttons**: Direct **`🚀 Launch Live App ↗`** launch links for Quiz App and Blogging Platform.
+- **Interactive Project Modals**: Dynamic popups rendering complete overviews, key features, categorized tech stacks, internship impact summaries, direct GitHub links, live app links, and live interactive app simulators:
   - 🌊 **IoT Sensor ML Simulator**: Interactive pH slider predicting water potability in real-time.
 
-### 8. 📄 Printable Resume PDF Modal & Google Drive Direct Link
-- Formatted digital CV overlay complete with a 1-click **`Open in Google Drive ↗`** action and native **`🖨️ Print / Save PDF`** capabilities (`window.print()`).
+### 9. 📄 Printable Resume PDF Modal & Google Drive Direct Link
+- Formatted digital CV overlay complete with a 1-click **`Open in Google Drive ↗`** action, updated workshops/credentials, and native **`🖨️ Print / Save PDF`** capabilities (`window.print()`).
 
-### 9. ✉️ Get In Touch & 1-Click Copy Utility
-- Active status indicator (`🟢 Open for Full-Stack Engineering Roles`).
-- 1-Click copy buttons for Email (`ganeshprasadnayak292@gmail.com`) and Phone (`+91 8088239071`) with instant visual feedback.
-- Interactive contact form with focus animations and submission handling.
+### 10. ✉️ Get In Touch & Cross-Browser 1-Click Copy Utility
+- 1-Click copy buttons for Email (`ganeshprasad40292.dev@gmail.com`) and Phone (`+91 8088239071`) with cross-browser clipboard fallback support and instant visual feedback.
+- Interactive contact form with focus animations and Web3Forms API submission handling.
 
-### 10. 🌐 High-Impact Social Footer
+### 11. 🌐 High-Impact Social Footer
 - 4 Large glassmorphic social cards with official SVG icons:
   - 🐙 **GitHub**: [@Ganesh40292](https://github.com/Ganesh40292)
   - 💼 **LinkedIn**: [in/ganeshprasad40292](https://linkedin.com/in/ganeshprasad40292/)
-  - 📧 **Email**: [ganeshprasadnayak292@gmail.com](mailto:ganeshprasadnayak292@gmail.com)
+  - 📧 **Email**: [ganeshprasad40292.dev@gmail.com](mailto:ganeshprasad40292.dev@gmail.com)
   - 📱 **Call**: [+91 8088239071](tel:8088239071)
-- Inspirational tagline quote and section quick links.
+- Inspirational tagline quote (*"Passionate about building scalable full-stack applications, secure APIs, and intuitive user experiences."*) and section quick links.
 
 ---
 
 ## 🛠️ Featured Projects Breakdown
 
 ### 1. 📝 Full Stack Blogging Platform
+- **Live Deployed App**: [https://blogging-platform-fullstack-client.vercel.app](https://blogging-platform-fullstack-client.vercel.app)
 - **Repository**: [https://github.com/Ganesh40292/blogging-platform-fullstack](https://github.com/Ganesh40292/blogging-platform-fullstack)
 - **Badge**: `FULL STACK APPLICATION`
 - **Overview**: A modern web application allowing authenticated users to create, publish, edit, and manage blog posts within a secure environment. Features an interactive commenting system for community discussions.
@@ -121,6 +127,7 @@
   - **Tools & Deployment**: Git, GitHub, Postman, Vercel, Render, Supabase
 
 ### 2. 🎮 Full Stack Interactive Quiz Application
+- **Live Deployed App**: [https://quiz-app-fullstack-smoky.vercel.app](https://quiz-app-fullstack-smoky.vercel.app)
 - **Repository**: [https://github.com/Ganesh40292/quiz-app-fullstack](https://github.com/Ganesh40292/quiz-app-fullstack)
 - **Badge**: `FULL STACK APPLICATION`
 - **Overview**: A comprehensive web platform enabling users to attempt quizzes with instant score evaluation. Includes a dedicated Administrator Dashboard for complete CRUD management of quiz questions.
@@ -140,7 +147,7 @@
 
 ### 3. 🌊 Water Quality Prediction System (Aqualytica)
 - **Repository**: [https://github.com/Ganesh40292/aqualytica](https://github.com/Ganesh40292/aqualytica)
-- **Badge**: `FINAL YEAR MAJOR PROJECT`
+- **Badge**: `FINAL YEAR MAJOR PROJECT (ONGOING)`
 - **Overview**: An IoT-enabled machine learning system integrating physical ESP32 sensors to predict water safety and quality scores from multiple real-time parameters.
 - **Key Features**:
   - ESP32 Microcontroller reading physical water sensor metrics (pH, Turbidity, Temperature).
@@ -171,7 +178,10 @@
 ```
 My Portfolio/
 ├── index.html       # Primary Single-Page Application (HTML Structure, CSS Styling, JS Engine)
-├── profile.jpg      # Profile Headshot Image
+├── profile.jpg      # Profile Headshot Image (100% Original HD Sharpness)
+├── cert_internship.jpg # MSME Internship Certificate
+├── cert_training.jpg   # MSME Training Certificate
+├── lor_genz.pdf        # Official Letter of Recommendation (LOR)
 ├── vercel.json      # Vercel Deployment, Security Headers, and Route Configuration
 └── README.md        # Comprehensive Project Documentation
 ```
@@ -192,7 +202,7 @@ My Portfolio/
 
 2. **Run locally**:
    - Double-click [`index.html`](index.html) to open directly in your web browser.
-   - *OR* use VS Code Extension **Live Server** to run at `http://127.0.0.1:5500`.
+   - *OR* use VS Code Extension **Live Server** or Python HTTP Server (`python -m http.server 5500`) to run at `http://127.0.0.1:5500`.
 
 ---
 
@@ -215,14 +225,14 @@ This repository includes a [`vercel.json`](vercel.json) file configured for 1-cl
 
 ## 🤝 Connect & Collaborate
 
-[![Email](https://img.shields.io/badge/Email-ganeshprasadnayak292%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ganeshprasadnayak292@gmail.com)
+[![Email](https://img.shields.io/badge/Email-ganeshprasad40292.dev%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ganeshprasad40292.dev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow_@Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
 [![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link)
 
 <br />
 
-*"Engineering high-performance full-stack architectures & intelligent software systems."*
+*"Passionate about building scalable full-stack applications, secure APIs, and intuitive user experiences."*
 
 <br />
 

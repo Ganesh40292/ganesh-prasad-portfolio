@@ -5,18 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Ganesh Prasad — Full-Stack Software Engineer. Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
+    content="Ganesh Prasad — Aspiring Full-Stack Developer. Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
   <meta name="theme-color" content="#06080e">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>Ganesh Prasad — Full-Stack Software Engineer</title>
+  <title>Ganesh Prasad — Aspiring Full-Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2306080e'/><circle cx='50' cy='50' r='40' fill='none' stroke='%2338bdf8' stroke-width='5'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' fill='%23f8fafc' font-family='sans-serif' font-weight='900' font-size='38'>GP</text></svg>">
+
+  <!-- OpenGraph / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ganesh Prasad — Aspiring Full-Stack Developer">
+  <meta property="og:description"
+    content="Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
+  <meta property="og:url" content="https://ganesh-prasad-portfolio.vercel.app">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
 
   <style>
@@ -29,8 +42,8 @@
       --border-glow: rgba(56, 189, 248, 0.4);
 
       --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
 
       --cyan: #38bdf8;
       --blue: #3b82f6;
@@ -64,7 +77,7 @@
 
       --text-primary: #0f172a;
       --text-secondary: #334155;
-      --text-muted: #64748b;
+      --text-muted: #475569;
     }
 
     /* High-Impact Light Mode Background Animation */
@@ -188,11 +201,14 @@
       top: 0;
       left: 0;
       height: 3px;
-      width: 0%;
+      width: 100%;
       background: var(--gradient-primary);
       z-index: 1000;
       box-shadow: 0 0 10px var(--cyan);
-      transition: width 0.1s ease-out;
+      transform-origin: left;
+      transform: scaleX(0);
+      will-change: transform;
+      transition: transform 0.05s ease-out;
     }
 
     .glow-sphere {
@@ -298,6 +314,42 @@
 
       100% {
         background-position: 40px 40px;
+      }
+    }
+
+    .welcome-top-quote {
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 680px;
+      text-align: center;
+      font-family: var(--font-heading);
+      font-size: clamp(0.88rem, 1.8vw, 1.05rem);
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+      line-height: 1.6;
+      padding: 10px 24px;
+      background: rgba(13, 18, 30, 0.65);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+      z-index: 10;
+      animation: fadeInWelcomeQuote 1s ease-out forwards;
+    }
+
+    @keyframes fadeInWelcomeQuote {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -15px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
       }
     }
 
@@ -542,6 +594,36 @@
       color: var(--cyan);
     }
 
+    .btn-hire-me {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--cyan);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+      cursor: pointer;
+    }
+
+    .btn-hire-me:hover {
+      background: var(--gradient-primary);
+      color: #04060a;
+      border-color: transparent;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.65);
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    .btn-hire-me:hover .status-dot {
+      background: #04060a;
+      box-shadow: 0 0 8px #04060a;
+    }
+
     .status-badge {
       display: inline-flex;
       align-items: center;
@@ -765,11 +847,12 @@
       object-position: top center;
       border-radius: 50%;
       display: block;
+      image-rendering: -webkit-optimize-contrast;
     }
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 12px;
     }
 
@@ -1007,6 +1090,101 @@
 
     .accordion-content.open {
       display: block;
+    }
+
+    /* WORKSHOPS SECTION STYLES */
+    .workshop-card-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .workshop-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .workshop-card:hover {
+      border-color: var(--border-glow);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-2px);
+    }
+
+    .workshop-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .workshop-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: rgba(168, 85, 247, 0.12);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      color: var(--violet);
+      font-size: 0.72rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .workshop-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      transition: color 0.2s ease;
+    }
+
+    .workshop-card:hover .workshop-title {
+      color: var(--cyan);
+    }
+
+    .workshop-org {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .workshop-toggle-icon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      flex-shrink: 0;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      transition: all 0.25s ease;
+    }
+
+    .workshop-card:hover .workshop-toggle-icon {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: var(--cyan);
+    }
+
+    .workshop-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+      opacity: 0;
+    }
+
+    .workshop-card.open .workshop-details {
+      max-height: 800px;
+      opacity: 1;
     }
 
     /* FEATURED PROJECTS */
@@ -1565,6 +1743,9 @@
 
   <!-- WELCOME INTRO OVERLAY WITH ANIMATED BACKGROUND -->
   <div id="welcome-overlay">
+    <div class="welcome-top-quote">
+      "Welcome to my portfolio — Transforming ideas into elegant, high-impact digital experiences."
+    </div>
     <div class="welcome-bg-glow"></div>
     <div class="welcome-grid-bg"></div>
     <div class="welcome-box">
@@ -1577,7 +1758,7 @@
       <div class="welcome-title">Ganesh Prasad</div>
 
       <div class="welcome-subtitle">
-        Full-Stack Software Engineer
+        Aspiring Full-Stack Developer
       </div>
 
       <div class="welcome-progress-wrap">
@@ -1601,6 +1782,7 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#workshops" class="nav-link">Workshops</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -1614,10 +1796,9 @@
           rel="noopener" class="btn btn-secondary" style="padding:7px 14px;font-size:0.82rem;">
           📄 View CV ↗
         </a>
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          Available for Hire
-        </div>
+        <a href="#contact" class="btn-hire-me">
+          <span class="status-dot"></span> Hire Me
+        </a>
       </div>
     </div>
   </header>
@@ -1630,14 +1811,14 @@
       <div class="hero-bento-grid">
         <div class="hero-left">
           <div class="hero-pill">
-            Full-Stack Software Engineer
+            Aspiring Full-Stack Developer
           </div>
           <h1 class="hero-title">
-            Engineering Scalable <span class="gradient-text">Full-Stack</span> Web Apps &amp; Systems.
+            Building Scalable <span class="gradient-text">Full-Stack</span> Web Applications &amp; Modern APIs.
           </h1>
           <p class="hero-subtitle">
-            Specializing in <strong>Java, Spring Boot, React.js, PostgreSQL, and MySQL</strong>. Experienced in building
-            secure RESTful APIs, role-based JWT authentication, cloud deployment, and IoT ML integration.
+            Specializing in <strong>Java, Spring Boot, React.js, and relational databases</strong>. Focused on engineering
+            secure RESTful endpoints, clean software architecture, and reliable cloud deployments.
           </p>
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">
@@ -1663,8 +1844,8 @@
             <div>
               <div style="font-family:var(--font-heading);font-weight:800;font-size:1.25rem;color:var(--text-primary);">
                 Ganesh Prasad</div>
-              <div style="font-size:0.88rem;color:var(--cyan);font-weight:600;margin-top:2px;">Full-Stack Software
-                Engineer</div>
+              <div style="font-size:0.88rem;color:var(--cyan);font-weight:600;margin-top:2px;">Aspiring Full-Stack
+                Developer</div>
               <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">📍 Udupi, Karnataka, India</div>
             </div>
           </div>
@@ -1691,18 +1872,14 @@
 
           <!-- Stats Grid Bento Card -->
           <div class="bento-card" style="padding:18px;">
-            <div class="stats-grid">
+            <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
               <div class="stat-box">
                 <div class="stat-num">8.53</div>
                 <div class="stat-label">BE CGPA</div>
               </div>
               <div class="stat-box">
                 <div class="stat-num">2+</div>
-                <div class="stat-label">Full-Stack Apps</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-num">100%</div>
-                <div class="stat-label">Full Stack</div>
+                <div class="stat-label">Deployed Apps</div>
               </div>
             </div>
           </div>
@@ -1722,8 +1899,9 @@
         <button class="filter-btn" data-filter="languages">Languages</button>
         <button class="filter-btn" data-filter="backend">Backend &amp; Security</button>
         <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
-        <button class="filter-btn" data-filter="database">Database &amp; Tools</button>
-        <button class="filter-btn" data-filter="core">Core CS &amp; Cloud</button>
+        <button class="filter-btn" data-filter="database">Databases</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="deployment">Deployment</button>
       </div>
 
       <div class="skills-grid">
@@ -1735,7 +1913,6 @@
             <span class="skill-tag">Java</span>
             <span class="skill-tag">Python</span>
             <span class="skill-tag">SQL</span>
-            <span class="skill-tag">C</span>
           </div>
         </div>
 
@@ -1774,9 +1951,9 @@
           </div>
         </div>
 
-        <div class="skill-category-card" data-cat="database">
+        <div class="skill-category-card" data-cat="tools">
           <div class="skill-cat-title">
-            <span>🛠️</span> Tools &amp; Deployment
+            <span>🛠️</span> Developer Tools
           </div>
           <div class="skill-tags">
             <span class="skill-tag">Git &amp; GitHub</span>
@@ -1786,25 +1963,18 @@
             <span class="skill-tag">Eclipse</span>
             <span class="skill-tag">MySQL Workbench</span>
             <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-cat="deployment">
+          <div class="skill-cat-title">
+            <span>🚀</span> Cloud &amp; Deployment
+          </div>
+          <div class="skill-tags">
             <span class="skill-tag">Vercel</span>
             <span class="skill-tag">Render</span>
             <span class="skill-tag">Railway</span>
             <span class="skill-tag">Supabase</span>
-          </div>
-        </div>
-
-        <div class="skill-category-card" data-cat="core">
-          <div class="skill-cat-title">
-            <span>🧠</span> Core CS &amp; Cloud
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Data Structures &amp; Algorithms Basics</span>
-            <span class="skill-tag">Object-Oriented Programming Basics</span>
-            <span class="skill-tag">DBMS Basics</span>
-            <span class="skill-tag">Operating Systems Basics</span>
-            <span class="skill-tag">Computer Networks Basics</span>
-            <span class="skill-tag">Cloud Concepts Basics (AWS, Azure, GCP)</span>
-            <span class="skill-tag">Docker Basics</span>
           </div>
         </div>
       </div>
@@ -1841,17 +2011,13 @@
             </ul>
 
             <button class="accordion-toggle" onclick="toggleAccordion(this)">
-              <span>Architectural &amp; System Highlights</span> ▼
+              <span>Key Internship Outcomes</span> ▼
             </button>
             <div class="accordion-content">
-              <p style="margin-bottom:8px;"><strong>Key Internship Outcomes:</strong></p>
-              <ul style="list-style:disc;padding-left:20px;color:var(--text-secondary);">
-                <li>Secured API endpoints with Stateless JWT Bearer tokens and custom Spring Security filter chains.
-                </li>
-                <li>Engineered 3NF relational schemas in MySQL with foreign key constraints to prevent orphan data
-                  records.</li>
-                <li>Configured CORS policy headers for decoupled React SPA and Spring Boot backend communication across
-                  Vercel &amp; Render.</li>
+              <ul style="list-style:disc;padding-left:20px;color:var(--text-secondary);line-height:1.7;">
+                <li>Built 2 full-stack web applications using React, Spring Boot, and PostgreSQL/MySQL.</li>
+                <li>Created secure user login systems with JWT authentication and REST APIs.</li>
+                <li>Deployed live web applications on Vercel, Render, and Supabase cloud platforms.</li>
               </ul>
             </div>
 
@@ -1881,10 +2047,79 @@
       </div>
     </section>
 
+    <!-- WORKSHOPS SECTION -->
+    <section id="workshops">
+      <div class="section-title-wrap">
+        <span class="section-tag">03. Workshops</span>
+        <h2 class="section-title">Workshops &amp; Training</h2>
+      </div>
+
+      <div class="workshop-card-wrap">
+        <div class="workshop-card" onclick="toggleWorkshopDetails(this)">
+          <div class="workshop-header">
+            <div>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+                <span class="workshop-badge">WORKSHOP 2026</span>
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--cyan);">August 2026</span>
+              </div>
+              <h3 class="workshop-title">UniCourt Analytics Workshop 2026</h3>
+              <div class="workshop-org">🏢 UniCourt | SMVITM, Bantakal</div>
+            </div>
+            <div class="workshop-toggle-icon">
+              <span class="toggle-text">Click to view details</span>
+              <span class="chevron">▼</span>
+            </div>
+          </div>
+
+          <div class="workshop-details">
+            <div style="padding-top:18px;margin-top:16px;border-top:1px solid var(--border);">
+              <h4 style="color:var(--cyan);font-size:0.95rem;margin-bottom:8px;font-family:var(--font-mono);">📌 Description</h4>
+              <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.7;margin-bottom:20px;">
+                Participated in the UniCourt Analytics Workshop 2026, gaining hands-on experience with Git, GitHub, Docker, Docker Compose, Flask, and PostgreSQL. Built and managed a containerized Flask application while learning modern software development, containerization, database integration, and collaborative development workflows.
+              </p>
+
+              <h4 style="color:var(--emerald);font-size:0.95rem;margin-bottom:10px;font-family:var(--font-mono);">🎯 Key Learnings</h4>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:10px;margin-bottom:20px;">
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> Git &amp; GitHub for version control
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> Docker &amp; Docker Compose
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> Flask application development
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> PostgreSQL database integration
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> Container networking and volumes
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--text-secondary);">
+                  <span style="color:var(--cyan);font-weight:bold;">✓</span> Modern DevOps workflows
+                </div>
+              </div>
+
+              <h4 style="color:var(--violet);font-size:0.95rem;margin-bottom:10px;font-family:var(--font-mono);">💻 Technologies Used</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span class="skill-tag" style="color:var(--cyan);border-color:rgba(56,189,248,0.3);">Git</span>
+                <span class="skill-tag" style="color:var(--cyan);border-color:rgba(56,189,248,0.3);">GitHub</span>
+                <span class="skill-tag" style="color:var(--violet);border-color:rgba(168,85,247,0.3);">Docker</span>
+                <span class="skill-tag" style="color:var(--violet);border-color:rgba(168,85,247,0.3);">Docker Compose</span>
+                <span class="skill-tag" style="color:var(--emerald);border-color:rgba(16,185,129,0.3);">Flask</span>
+                <span class="skill-tag" style="color:var(--emerald);border-color:rgba(16,185,129,0.3);">PostgreSQL</span>
+                <span class="skill-tag" style="color:var(--amber);border-color:rgba(245,158,11,0.3);">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PROJECTS SECTION -->
     <section id="projects">
       <div class="section-title-wrap">
-        <span class="section-tag">03. Portfolio</span>
+        <span class="section-tag">04. Portfolio</span>
         <h2 class="section-title">Featured Projects</h2>
       </div>
 
@@ -1925,9 +2160,15 @@
               <span class="tech-pill">PostgreSQL</span>
               <span class="tech-pill">Supabase</span>
             </div>
-            <button class="view-details-btn" onclick="openProjectModal(0)">
-              View Architecture &amp; Live Demo ↗
-            </button>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;">
+              <a href="https://blogging-platform-fullstack-client.vercel.app" target="_blank" rel="noopener"
+                class="view-details-btn" style="background:var(--gradient-primary);color:#04060a;border:none;font-weight:700;">
+                🚀 Launch Live App ↗
+              </a>
+              <button class="view-details-btn" onclick="openProjectModal(0)">
+                Architecture &amp; Demo ↗
+              </button>
+            </div>
           </div>
         </div>
 
@@ -1953,9 +2194,15 @@
               <span class="tech-pill">PostgreSQL</span>
               <span class="tech-pill">Supabase</span>
             </div>
-            <button class="view-details-btn" onclick="openProjectModal(1)">
-              View Architecture &amp; Live Demo ↗
-            </button>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;">
+              <a href="https://quiz-app-fullstack-smoky.vercel.app" target="_blank" rel="noopener"
+                class="view-details-btn" style="background:var(--gradient-primary);color:#04060a;border:none;font-weight:700;">
+                🚀 Launch Live App ↗
+              </a>
+              <button class="view-details-btn" onclick="openProjectModal(1)">
+                Architecture &amp; Demo ↗
+              </button>
+            </div>
           </div>
         </div>
 
@@ -1965,7 +2212,7 @@
           <div>
             <span class="project-badge"
               style="background:rgba(56,189,248,0.15);color:var(--cyan);border-color:rgba(56,189,248,0.3);">FINAL YEAR
-              MAJOR PROJECT</span>
+              MAJOR PROJECT (ONGOING)</span>
             <h3 class="project-title">Water Quality Prediction System</h3>
             <ul class="project-desc-list">
               <li>Engineering an IoT-enabled machine learning system integrating ESP32 sensors to predict water quality
@@ -1982,7 +2229,7 @@
               <span class="tech-pill">ESP32</span>
               <span class="tech-pill">MySQL</span>
             </div>
-            <button class="view-details-btn" onclick="openProjectModal(2)">
+            <button class="view-details-btn" onclick="openProjectModal(2)" style="margin-top:12px;">
               View Architecture &amp; Live Demo ↗
             </button>
           </div>
@@ -1994,7 +2241,7 @@
     <!-- EDUCATION SECTION -->
     <section id="education">
       <div class="section-title-wrap">
-        <span class="section-tag">04. Education</span>
+        <span class="section-tag">05. Education</span>
         <h2 class="section-title">Academic Background</h2>
       </div>
 
@@ -2023,16 +2270,12 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
       <div class="section-title-wrap">
-        <span class="section-tag">05. Contact</span>
+        <span class="section-tag">06. Contact</span>
         <h2 class="section-title">Get In Touch</h2>
       </div>
 
       <div class="contact-box">
         <div>
-          <div
-            style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:var(--radius-full);background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);color:var(--emerald);font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-            <span class="status-dot"></span> Open for Full-Stack Engineering Roles
-          </div>
 
           <h3 class="contact-info-title">Let's build something extraordinary together.</h3>
           <p style="color:var(--text-secondary);margin-bottom:24px;font-size:0.95rem;line-height:1.7;">
@@ -2046,10 +2289,10 @@
                 <div class="contact-icon">📧</div>
                 <div>
                   <div style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);">EMAIL</div>
-                  <div class="contact-val">ganeshprasadnayak292@gmail.com</div>
+                  <div class="contact-val">ganeshprasad40292.dev@gmail.com</div>
                 </div>
               </div>
-              <button class="copy-btn" onclick="copyText('ganeshprasadnayak292@gmail.com', this)">Copy</button>
+              <button class="copy-btn" onclick="copyText('ganeshprasad40292.dev@gmail.com', this)">Copy</button>
             </div>
 
             <div class="contact-item">
@@ -2123,7 +2366,7 @@
             <p style="font-size:0.82rem;color:var(--text-muted);font-family:var(--font-mono);">📍 1-28 Golkar House,
               Marne, via Moodubelle, Udupi, 576120</p>
             <p style="font-size:0.82rem;color:var(--cyan);font-family:var(--font-mono);margin-top:2px;">📞 8088239071 |
-              ganeshprasadnayak292@gmail.com</p>
+              ganeshprasad40292.dev@gmail.com</p>
           </div>
         </div>
         <div style="display:flex;gap:8px;">
@@ -2150,16 +2393,13 @@
 
         <h3 class="resume-section-heading">Technical Skills</h3>
         <p style="margin-bottom:18px;text-align:justify;text-justify:inter-word;">
-          <strong>Languages:</strong> Java, Python, C, SQL<br>
+          <strong>Languages:</strong> Java, Python, SQL<br>
           <strong>Backend:</strong> Spring Boot, Spring Security, REST APIs, JWT Authentication, MVC Architecture<br>
           <strong>Frontend:</strong> React.js, HTML5, CSS3<br>
           <strong>Database:</strong> MySQL, PostgreSQL, Database Design, CRUD Operations<br>
           <strong>Tools &amp; Platforms:</strong> Git, GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse, MySQL
           Workbench, Jupyter Notebook<br>
-          <strong>Deployment:</strong> Vercel, Render, Railway, Supabase<br>
-          <strong>Core CS Concepts:</strong> Data Structures &amp; Algorithms Basics, Object-Oriented Programming
-          Basics, DBMS Basics, Operating Systems Basics, Computer Networks Basics, Cloud Computing Concepts Basics (AWS,
-          Azure, GCP), Docker Basics
+          <strong>Deployment:</strong> Vercel, Render, Railway, Supabase
         </p>
 
         <h3 class="resume-section-heading">Internship Experience</h3>
@@ -2210,7 +2450,7 @@
 
           <div>
             <div style="font-weight:700;color:var(--text-primary);">Water Quality Prediction System (Final Year Major
-              Project) | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">Python, Machine Learning,
+              Project - Ongoing) | <span style="font-size:0.85rem;color:var(--cyan);font-weight:400;">Python, Machine Learning,
                 Flask/Spring Boot, MySQL, ESP32, IoT Sensors</span></div>
             <ul style="list-style:disc;padding-left:20px;margin-top:4px;text-align:justify;text-justify:inter-word;">
               <li style="margin-bottom:3px;">Engineering an IoT-enabled machine learning system integrating ESP32
@@ -2219,6 +2459,17 @@
                 water quality assessment.</li>
             </ul>
           </div>
+        </div>
+
+        <h3 class="resume-section-heading">Workshops &amp; Training</h3>
+        <div style="margin-bottom:18px;">
+          <div style="display:flex;justify-content:space-between;font-weight:700;color:var(--text-primary);flex-wrap:wrap;">
+            <span>UniCourt Analytics Workshop 2026 — UniCourt | SMVITM, Bantakal</span>
+            <span>August 2026</span>
+          </div>
+          <p style="margin-top:4px;color:var(--text-secondary);text-align:justify;text-justify:inter-word;">
+            Gained hands-on experience building and managing a containerized Flask application integrated with PostgreSQL. Covered Git, GitHub, Docker, Docker Compose, container networking, database volumes, and modern DevOps workflows.
+          </p>
         </div>
 
         <h3 class="resume-section-heading">Education</h3>
@@ -2277,7 +2528,7 @@
             style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);">in/ganeshprasad40292</span>
         </a>
 
-        <a href="mailto:ganeshprasadnayak292@gmail.com" class="footer-social-btn"
+        <a href="mailto:ganeshprasad40292.dev@gmail.com" class="footer-social-btn"
           style="justify-content:center;flex-direction:column;padding:18px;gap:8px;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -2286,7 +2537,7 @@
           </svg>
           <span style="font-weight:700;">Email</span>
           <span
-            style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);">ganeshprasadnayak...</span>
+            style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);">ganeshprasad4029...</span>
         </a>
 
         <a href="tel:8088239071" class="footer-social-btn"
@@ -2312,7 +2563,7 @@
         </div>
         <p class="footer-statement"
           style="max-width:640px;color:var(--text-secondary);font-size:0.95rem;line-height:1.7;margin:0 auto;">
-          "Engineering high-performance full-stack architectures &amp; intelligent software systems."
+          "Passionate about building scalable full-stack applications, secure APIs, and intuitive user experiences."
         </p>
       </div>
 
@@ -2396,8 +2647,8 @@
     window.addEventListener('scroll', () => {
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+      const scrolled = height > 0 ? winScroll / height : 0;
+      document.getElementById('scrollProgressBar').style.transform = `scaleX(${scrolled})`;
     });
 
     // Light/Dark Theme Switcher Logic
@@ -2465,19 +2716,46 @@
       });
     });
 
-    // 1-Click Copy Utility
+    // 1-Click Copy Utility with Fallback
     function copyText(text, btnElement) {
-      navigator.clipboard.writeText(text).then(() => {
+      const showSuccess = () => {
         const orig = btnElement.textContent;
-        btnElement.textContent = 'Copied!';
+        btnElement.textContent = '✓ Copied!';
         btnElement.style.background = 'var(--emerald)';
-        btnElement.style.color = '#fff';
+        btnElement.style.color = '#04060a';
+        btnElement.style.fontWeight = '700';
         setTimeout(() => {
           btnElement.textContent = orig;
-          btnElement.style.background = 'rgba(255, 255, 255, 0.06)';
-          btnElement.style.color = 'var(--text-secondary)';
+          btnElement.style.background = '';
+          btnElement.style.color = '';
+          btnElement.style.fontWeight = '';
         }, 2000);
-      });
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(showSuccess).catch(() => {
+          fallbackCopy(text, showSuccess);
+        });
+      } else {
+        fallbackCopy(text, showSuccess);
+      }
+    }
+
+    function fallbackCopy(text, onSuccess) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        if (onSuccess) onSuccess();
+      } catch (err) {
+        console.error('Copy failed:', err);
+      }
+      document.body.removeChild(textArea);
     }
 
     // Form Submission via Web3Forms API
@@ -2546,9 +2824,23 @@
       const content = btn.nextElementSibling;
       content.classList.toggle('open');
       if (content.classList.contains('open')) {
-        btn.innerHTML = '<span>Architectural &amp; System Highlights</span> ▲';
+        btn.innerHTML = '<span>Key Internship Outcomes</span> ▲';
       } else {
-        btn.innerHTML = '<span>Architectural &amp; System Highlights</span> ▼';
+        btn.innerHTML = '<span>Key Internship Outcomes</span> ▼';
+      }
+    }
+
+    // Workshop Toggle Logic
+    function toggleWorkshopDetails(card) {
+      card.classList.toggle('open');
+      const textEl = card.querySelector('.toggle-text');
+      const chevronEl = card.querySelector('.chevron');
+      if (card.classList.contains('open')) {
+        textEl.textContent = 'Click to collapse';
+        chevronEl.textContent = '▲';
+      } else {
+        textEl.textContent = 'Click to view details';
+        chevronEl.textContent = '▼';
       }
     }
 
@@ -2603,7 +2895,8 @@
         },
         significance: "Demonstrates practical full-stack web development experience gained during my internship at GenZ EducateWing, proving end-to-end capabilities in building scalable, secure, and production-ready applications.",
         demoType: "blog",
-        repo: "https://github.com/Ganesh40292/blogging-platform-fullstack"
+        repo: "https://github.com/Ganesh40292/blogging-platform-fullstack",
+        liveUrl: "https://blogging-platform-fullstack-client.vercel.app"
       },
       {
         title: "Full Stack Interactive Quiz Application",
@@ -2626,11 +2919,12 @@
         },
         significance: "Reflects hands-on experience gained during my internship at GenZ EducateWing, demonstrating proficiency in React.js, Spring Boot, Spring Security, JWT, REST APIs, PostgreSQL, and cloud deployment.",
         demoType: "quiz",
-        repo: "https://github.com/Ganesh40292/quiz-app-fullstack"
+        repo: "https://github.com/Ganesh40292/quiz-app-fullstack",
+        liveUrl: "https://quiz-app-fullstack-smoky.vercel.app"
       },
       {
         title: "Water Quality Prediction System",
-        badge: "FINAL YEAR MAJOR PROJECT",
+        badge: "FINAL YEAR MAJOR PROJECT (ONGOING)",
         overview: "An IoT-enabled machine learning system integrating physical ESP32 sensors to predict water quality and safety scores from multiple real-time parameters.",
         features: [
           "ESP32 Microcontroller reading physical water sensor metrics (pH, Turbidity, Temperature).",
@@ -2655,29 +2949,7 @@
       const body = document.getElementById('projectModalBody');
 
       let simulatorHTML = '';
-      if (proj.demoType === 'quiz') {
-        simulatorHTML = `
-        <div style="background:var(--bg-inset);padding:18px;border-radius:var(--radius-md);border:1px solid var(--border);margin-bottom:20px;">
-          <h4 style="color:var(--cyan);margin-bottom:10px;font-size:0.95rem;">🎮 Live Quiz App Simulator</h4>
-          <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px;">Q: What design pattern does Spring Security use for authentication filters?</p>
-          <div style="display:flex;flex-direction:column;gap:8px;" id="quizDemoBox">
-            <button class="btn btn-secondary" style="font-size:0.82rem;justify-content:flex-start;" onclick="answerQuizDemo(true, this)">A) Chain of Responsibility Filter Chain ✓</button>
-            <button class="btn btn-secondary" style="font-size:0.82rem;justify-content:flex-start;" onclick="answerQuizDemo(false, this)">B) Singleton Pattern</button>
-          </div>
-          <div id="quizScoreFeedback" style="margin-top:10px;font-size:0.85rem;font-weight:600;"></div>
-        </div>
-      `;
-      } else if (proj.demoType === 'blog') {
-        simulatorHTML = `
-        <div style="background:var(--bg-inset);padding:18px;border-radius:var(--radius-md);border:1px solid var(--border);margin-bottom:20px;">
-          <h4 style="color:var(--cyan);margin-bottom:10px;font-size:0.95rem;">📝 Live Blog Post Preview Simulator</h4>
-          <input type="text" id="demoBlogTitle" class="form-input" style="margin-bottom:10px;" placeholder="Enter sample post title..." onkeyup="updateBlogDemoPreview()" />
-          <div id="demoBlogCard" style="background:var(--bg-card);padding:12px;border-radius:var(--radius-sm);border:1px solid var(--border);font-size:0.88rem;color:var(--text-primary);">
-            Preview: <strong id="demoBlogText">My First Tech Blog</strong> (Author: Ganesh Prasad | Role: AUTHOR)
-          </div>
-        </div>
-      `;
-      } else if (proj.demoType === 'water') {
+      if (proj.demoType === 'water') {
         simulatorHTML = `
         <div style="background:var(--bg-inset);padding:18px;border-radius:var(--radius-md);border:1px solid var(--border);margin-bottom:20px;">
           <h4 style="color:var(--cyan);margin-bottom:10px;font-size:0.95rem;">🌊 IoT Sensor ML Prediction Simulator</h4>
@@ -2732,7 +3004,8 @@
       </div>
 
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="${proj.repo}" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px;font-size:0.88rem;">
+        ${proj.liveUrl ? `<a href="${proj.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px;font-size:0.88rem;background:var(--gradient-primary);color:#04060a;font-weight:700;">🚀 Launch Deployed App ↗</a>` : ''}
+        <a href="${proj.repo}" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:9px 18px;font-size:0.88rem;">
           View Repository on GitHub ↗
         </a>
         <button onclick="closeProjectModal()" class="btn btn-secondary" style="padding:9px 18px;font-size:0.88rem;">
@@ -2743,30 +3016,19 @@
       document.getElementById('projectModal').classList.add('open');
     }
 
-    function answerQuizDemo(isCorrect, btn) {
-      const feedback = document.getElementById('quizScoreFeedback');
-      if (isCorrect) {
-        feedback.textContent = "✓ Correct! Spring Security uses a FilterChain pattern to evaluate JWT Bearer tokens.";
-        feedback.style.color = "var(--emerald)";
-      } else {
-        feedback.textContent = "✕ Incorrect. Try option A!";
-        feedback.style.color = "var(--amber)";
-      }
-    }
-
-    function updateBlogDemoPreview() {
-      const title = document.getElementById('demoBlogTitle').value;
-      document.getElementById('demoBlogText').textContent = title || "My First Tech Blog";
-    }
-
     function updateWaterMLPrediction() {
-      const val = parseFloat(document.getElementById('phSlider').value);
-      document.getElementById('phVal').textContent = val;
+      const slider = document.getElementById('phSlider');
+      if (!slider) return;
+      const val = parseFloat(slider.value);
+      const phVal = document.getElementById('phVal');
+      if (phVal) phVal.textContent = val;
       const res = document.getElementById('waterMLResult');
-      if (val >= 6.5 && val <= 8.5) {
-        res.innerHTML = `ML Status: <span style="color:var(--emerald);">SAFE_POTABLE (Confidence 98.4%)</span>`;
-      } else {
-        res.innerHTML = `ML Status: <span style="color:var(--amber);">WARNING_NON_POTABLE (Confidence 94.1%)</span>`;
+      if (res) {
+        if (val >= 6.5 && val <= 8.5) {
+          res.innerHTML = `ML Status: <span style="color:var(--emerald);">SAFE_POTABLE (Confidence 98.4%)</span>`;
+        } else {
+          res.innerHTML = `ML Status: <span style="color:var(--amber);">WARNING_NON_POTABLE (Confidence 94.1%)</span>`;
+        }
       }
     }
 
