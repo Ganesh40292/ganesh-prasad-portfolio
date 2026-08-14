@@ -7,9 +7,6 @@
   <meta name="description"
     content="Ganesh Prasad — Aspiring Full-Stack Developer. Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
   <meta name="theme-color" content="#06080e">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <title>Ganesh Prasad — Aspiring Full-Stack Developer</title>
 
   <!-- Favicon -->
@@ -22,7 +19,7 @@
   <meta property="og:description"
     content="Specializing in Java, Spring Boot, React.js, PostgreSQL, MySQL, and IoT ML Systems.">
   <meta property="og:url" content="https://ganesh-prasad-portfolio.vercel.app">
-  <meta property="og:image" content="profile.jpg">
+  <meta property="og:image" content="https://ganesh-prasad-portfolio.vercel.app/profile.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts -->
@@ -1710,7 +1707,49 @@
     }
 
     @media (max-width: 768px) {
+      .hamburger-btn {
+        display: flex;
+      }
+
       .nav-links {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(6, 8, 14, 0.96);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 80px 32px 32px;
+        gap: 4px;
+        transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 100;
+        border-left: 1px solid var(--border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+        list-style: none;
+      }
+
+      [data-theme="light"] .nav-links {
+        background: rgba(248, 250, 252, 0.96);
+      }
+
+      .nav-links.mobile-open {
+        right: 0;
+      }
+
+      .nav-links .nav-link {
+        font-size: 1.05rem;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--border);
+        display: block;
+      }
+
+      .nav-actions .btn.btn-secondary {
+        display: none;
+      }
+
+      .nav-actions .btn-hire-me {
         display: none;
       }
 
@@ -1730,6 +1769,160 @@
         left: 1px;
       }
     }
+
+    /* Hamburger Menu Button */
+    .hamburger-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      z-index: 101;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Mobile Nav Backdrop */
+    .mobile-nav-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    .mobile-nav-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Footer links hover fix */
+    .footer-links a:hover {
+      color: var(--cyan);
+    }
+
+    /* Scroll Progress Rocket */
+    #scrollRunner {
+      position: fixed;
+      top: -3px;
+      left: 0;
+      z-index: 1001;
+      pointer-events: none;
+      will-change: left, transform;
+      transition: left 0.08s ease-out, transform 0.08s ease-out;
+      filter: drop-shadow(0 0 8px var(--cyan));
+    }
+
+    /* Flame exhaust trail */
+    #scrollRunner::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 75%;
+      height: 6px;
+      background: linear-gradient(to left, var(--amber), #ef4444, transparent);
+      transform: translateY(-50%);
+      border-radius: 4px;
+      animation: flamePulse 0.15s ease-in-out infinite alternate;
+    }
+
+    @keyframes flamePulse {
+      0% { width: 16px; opacity: 0.7; }
+      100% { width: 24px; opacity: 1; }
+    }
+
+    /* Sparkle embers */
+    #scrollRunner::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 95%;
+      width: 3px;
+      height: 3px;
+      background: var(--amber);
+      border-radius: 50%;
+      transform: translateY(-50%);
+      animation: sparkle 0.3s ease-in-out infinite;
+      box-shadow:
+        -5px 4px 0 0 #ef4444,
+        -11px -3px 0 0 var(--amber),
+        -17px 2px 0 0 rgba(239, 68, 68, 0.4);
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; transform: translateY(-50%) scale(1); }
+      50% { opacity: 0.3; transform: translateY(-50%) scale(0.5); }
+    }
+
+    #scrollRunner svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--cyan);
+      animation: rocketFloat 1s ease-in-out infinite;
+    }
+
+    @keyframes rocketFloat {
+      0%, 100% { transform: rotate(90deg) scale(1); }
+      50% { transform: rotate(93deg) scale(1.04); }
+    }
+
+    /* Celebration - rocket launches upward */
+    #scrollRunner.finished {
+      filter: drop-shadow(0 0 12px var(--emerald));
+    }
+
+    #scrollRunner.finished svg {
+      fill: var(--emerald);
+      animation: rocketLaunch 0.6s ease-in-out infinite;
+    }
+
+    #scrollRunner.finished::before {
+      background: linear-gradient(to left, #fbbf24, #f97316, #ef4444, transparent);
+      animation: flameBurst 0.12s ease-in-out infinite alternate;
+    }
+
+    #scrollRunner.finished::after {
+      box-shadow:
+        -5px 4px 0 0 #f97316,
+        -11px -3px 0 0 #fbbf24,
+        -17px 2px 0 0 #f97316,
+        -8px -5px 0 0 #fbbf24;
+    }
+
+    @keyframes rocketLaunch {
+      0%, 100% { transform: rotate(45deg) scale(1); }
+      50% { transform: rotate(45deg) scale(1.25); }
+    }
+
+    @keyframes flameBurst {
+      0% { width: 24px; opacity: 0.9; }
+      100% { width: 35px; opacity: 1; }
+    }
   </style>
 </head>
 
@@ -1737,6 +1930,9 @@
 
   <!-- Reading Progress Bar -->
   <div id="scrollProgressBar"></div>
+  <div id="scrollRunner">
+    <svg viewBox="0 0 24 24"><path d="M12 2.5s-5 5.5-5 11c0 2 1 3.5 2.5 4.5L8 22h3l1-3 1 3h3l-1.5-4.5c1.5-1 2.5-2.5 2.5-4.5 0-5.5-5-11-5-11zm0 12.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+  </div>
 
   <!-- Interactive Particle Mesh Canvas Background -->
   <canvas id="particleCanvas"></canvas>
@@ -1792,7 +1988,7 @@
           <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
         </button>
 
-        <a href="https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link" target="_blank"
+        <a href="https://drive.google.com/file/d/1UpLzfXySojcTQjQaO0kVaDY60572pRMn/view" target="_blank"
           rel="noopener" class="btn btn-secondary" style="padding:7px 14px;font-size:0.82rem;">
           📄 View CV ↗
         </a>
@@ -1800,8 +1996,14 @@
           <span class="status-dot"></span> Hire Me
         </a>
       </div>
+      <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="toggleMobileNav()"></div>
 
   <main>
 
@@ -1827,7 +2029,7 @@
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link"
+            <a href="https://drive.google.com/file/d/1UpLzfXySojcTQjQaO0kVaDY60572pRMn/view"
               target="_blank" rel="noopener" class="btn btn-secondary">
               View / Download CV ↗
             </a>
@@ -1839,7 +2041,7 @@
           <!-- Profile Bento Card -->
           <div class="bento-card" style="display:flex;align-items:center;gap:20px;padding:22px;">
             <div class="profile-img-wrap">
-              <img src="profile.jpg" alt="Ganesh Prasad" class="profile-img" />
+              <img src="profile.jpg" alt="Ganesh Prasad" class="profile-img" loading="lazy" />
             </div>
             <div>
               <div style="font-family:var(--font-heading);font-weight:800;font-size:1.25rem;color:var(--text-primary);">
@@ -2347,13 +2549,13 @@
 
   <!-- Floating Action Dock -->
   <div class="floating-dock">
-    <a href="https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link" target="_blank"
+    <a href="https://drive.google.com/file/d/1UpLzfXySojcTQjQaO0kVaDY60572pRMn/view" target="_blank"
       rel="noopener" class="dock-btn" title="Open CV in Google Drive">📄</a>
     <button class="dock-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top">⬆</button>
   </div>
 
   <!-- MODAL 1: RESUME VIEWER -->
-  <div class="modal-overlay" id="resumeModal">
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume Viewer">
     <div class="modal-card">
       <button class="modal-close" onclick="closeResumeModal()">✕</button>
       <div
@@ -2370,7 +2572,7 @@
           </div>
         </div>
         <div style="display:flex;gap:8px;">
-          <a href="https://drive.google.com/file/d/1fevXHqzU-XQVIn-JoZ8J_9EhwkqTfz_3/view?usp=drive_link"
+          <a href="https://drive.google.com/file/d/1UpLzfXySojcTQjQaO0kVaDY60572pRMn/view"
             target="_blank" rel="noopener" class="btn btn-primary" style="padding:8px 16px;font-size:0.85rem;">
             Open in Google Drive ↗
           </a>
@@ -2486,7 +2688,7 @@
   </div>
 
   <!-- MODAL 2: PROJECT DETAILS & APP SIMULATOR VIEWER -->
-  <div class="modal-overlay" id="projectModal">
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project Details">
     <div class="modal-card">
       <button class="modal-close" onclick="closeProjectModal()">✕</button>
       <div id="projectModalBody">
@@ -2593,7 +2795,7 @@
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
       particles = [];
-      const count = Math.floor((width * height) / 25000);
+      const count = Math.min(Math.floor((width * height) / 25000), 45);
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * width,
@@ -2643,12 +2845,25 @@
     initCanvas();
     renderParticles();
 
-    // Scroll Progress Bar Handler
+    // Scroll Progress Bar & Runner Handler
+    const scrollRunner = document.getElementById('scrollRunner');
     window.addEventListener('scroll', () => {
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = height > 0 ? winScroll / height : 0;
       document.getElementById('scrollProgressBar').style.transform = `scaleX(${scrolled})`;
+
+      // Move the running person along the progress bar
+      const percent = scrolled * 100;
+      scrollRunner.style.left = percent + '%';
+      scrollRunner.style.transform = `translateX(-${percent}%)`;
+
+      // Celebration when reaching the footer
+      if (scrolled >= 0.98) {
+        scrollRunner.classList.add('finished');
+      } else {
+        scrollRunner.classList.remove('finished');
+      }
     });
 
     // Light/Dark Theme Switcher Logic
@@ -3056,6 +3271,51 @@
     document.querySelectorAll('section').forEach(sec => {
       sec.classList.add('reveal');
       revealObserver.observe(sec);
+    });
+
+    // Mobile Hamburger Navigation Toggle
+    function toggleMobileNav() {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburger = document.getElementById('hamburgerBtn');
+      const backdrop = document.getElementById('mobileNavBackdrop');
+      navLinks.classList.toggle('mobile-open');
+      hamburger.classList.toggle('active');
+      backdrop.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
+    }
+
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-links .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.classList.contains('mobile-open')) {
+          toggleMobileNav();
+        }
+      });
+    });
+
+    // ESC key to close modals and mobile nav
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (document.getElementById('resumeModal').classList.contains('open')) {
+          closeResumeModal();
+        }
+        if (document.getElementById('projectModal').classList.contains('open')) {
+          closeProjectModal();
+        }
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks && navLinks.classList.contains('mobile-open')) {
+          toggleMobileNav();
+        }
+      }
+    });
+
+    // Close modals on overlay click (outside the modal card)
+    document.getElementById('resumeModal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeResumeModal();
+    });
+    document.getElementById('projectModal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeProjectModal();
     });
   </script>
 
