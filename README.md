@@ -6,7 +6,7 @@
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-ganesh--prasad--portfolio.vercel.app-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://ganesh-prasad-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ganeshprasad40292-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
-[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/172tankrbDQ0wKOlLczZ85EgYc2R72cH2/view?usp=drive_link)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
 
 ![Focus](https://img.shields.io/badge/Focus-Full--Stack%20Development-38bdf8?style=flat-square)
 ![Tech Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20React.js%20%7C%20MySQL-a855f7?style=flat-square)
@@ -30,7 +30,7 @@
 - **Phone**: [+91 8088239071](tel:8088239071)
 - **GitHub**: [github.com/Ganesh40292](https://github.com/Ganesh40292)
 - **LinkedIn**: [linkedin.com/in/ganeshprasad40292](https://linkedin.com/in/ganeshprasad40292/)
-- **Resume**: [Google Drive Resume](https://drive.google.com/file/d/172tankrbDQ0wKOlLczZ85EgYc2R72cH2/view?usp=drive_link)
+- **Resume**: [Google Drive Resume](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
 
 ---
 
@@ -88,8 +88,9 @@
 - **Interactive Project Modals**: Dynamic popups rendering complete overviews, key features, categorized tech stacks, internship impact summaries, direct GitHub links, live app links, and live interactive app simulators:
   - 🌊 **IoT Sensor ML Simulator**: Interactive pH slider predicting water potability in real-time.
 
-### 9. 📄 Printable Resume PDF Modal & Google Drive Direct Link
+### 9. 📄 Dual-Action Resume Download & Google Drive Direct Link
 - Formatted digital CV overlay complete with a 1-click **`Open in Google Drive ↗`** action, updated workshops/credentials, and native **`🖨️ Print / Save PDF`** capabilities (`window.print()`).
+- All CV buttons (**View CV**, **View / Download CV**, floating dock 📄, and modal) trigger a dual-action: opening the Google Drive PDF viewer in a new tab while seamlessly initiating a background PDF download.
 
 ### 10. ✉️ Get In Touch & Cross-Browser 1-Click Copy Utility
 - 1-Click copy buttons for Email (`ganeshprasad40292.dev@gmail.com`) and Phone (`+91 8088239071`) with cross-browser clipboard fallback support and instant visual feedback.
@@ -228,7 +229,7 @@ This repository includes a [`vercel.json`](vercel.json) file configured for 1-cl
 [![Email](https://img.shields.io/badge/Email-ganeshprasad40292.dev%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ganeshprasad40292.dev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow_@Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
-[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/172tankrbDQ0wKOlLczZ85EgYc2R72cH2/view?usp=drive_link)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
 
 <br />
 
