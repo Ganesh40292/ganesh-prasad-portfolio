@@ -6,7 +6,7 @@
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-ganesh--prasad--portfolio.vercel.app-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://ganesh-prasad-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ganeshprasad40292-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
-[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1ZkurJmRaJljeESrnNNmbbElg6rp0mLLL/view)
 
 ![Focus](https://img.shields.io/badge/Focus-Full--Stack%20Development-38bdf8?style=flat-square)
 ![Tech Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20React.js%20%7C%20MySQL-a855f7?style=flat-square)
@@ -30,7 +30,7 @@
 - **Phone**: [+91 8088239071](tel:8088239071)
 - **GitHub**: [github.com/Ganesh40292](https://github.com/Ganesh40292)
 - **LinkedIn**: [linkedin.com/in/ganeshprasad40292](https://linkedin.com/in/ganeshprasad40292/)
-- **Resume**: [Google Drive Resume](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
+- **Resume**: [Google Drive Resume](https://drive.google.com/file/d/1ZkurJmRaJljeESrnNNmbbElg6rp0mLLL/view)
 
 ---
 
@@ -229,7 +229,7 @@ This repository includes a [`vercel.json`](vercel.json) file configured for 1-cl
 [![Email](https://img.shields.io/badge/Email-ganeshprasad40292.dev%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ganeshprasad40292.dev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ganeshprasad40292/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow_@Ganesh40292-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ganesh40292)
-[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1OmREpNBAgVZSZDtdpgfFBy08Jyrr8w6z/view)
+[![Resume](https://img.shields.io/badge/Resume-Google_Drive_PDF-10b981?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1ZkurJmRaJljeESrnNNmbbElg6rp0mLLL/view)
 
 <br />
 
